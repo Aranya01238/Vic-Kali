@@ -1,0 +1,93 @@
+{
+    "todos": [
+        {
+            "id": 1,
+            "task": "finish the robotics project",
+            "priority": "medium",
+            "created": "2026-04-26 23:47",
+            "done": false
+        },
+        {
+            "id": 2,
+            "task": "submit assignment",
+            "priority": "medium",
+            "created": "2026-04-26 23:47",
+            "done": false
+        },
+        {
+            "id": 3,
+            "task": "finish the robotics project",
+            "priority": "medium",
+            "created": "2026-04-26 23:48",
+            "done": false
+        },
+        {
+            "id": 4,
+            "task": "submit assignment",
+            "priority": "medium",
+            "created": "2026-04-26 23:48",
+            "done": false
+        },
+        {
+            "id": 5,
+            "task": "complete project",
+            "priority": "medium",
+            "created": "2026-04-27 17:12",
+            "done": false
+        },
+        {
+            "id": 6,
+            "task": "implement fix",
+            "priority": "medium",
+            "created": "2026-04-27 17:12",
+            "done": false
+        }
+    ],
+    "reminders": [
+        {
+            "id": 1,
+            "message": "take a break utes",
+            "set_at": "2026-04-26 23:47",
+            "fire_at": "2026-04-26 23:48",
+            "fired": false
+        },
+        {
+            "id": 2,
+            "message": "take a break utes",
+            "set_at": "2026-04-26 23:48",
+            "fire_at": "2026-04-26 23:49",
+            "fired": false
+        },
+        {
+            "id": 3,
+            "message": "utes to call boss",
+            "set_at": "2026-04-27 17:12",
+            "fire_at": "2026-04-27 17:17",
+            "fired": false
+        }
+    ],
+    "schedule": [
+        {
+            "id": 1,
+            "event": "a meeting",
+            "day": "today",
+            "time": "3:30",
+            "created": "2026-04-27 17:12"
+        },
+        {
+            "id": 2,
+            "event": "a meeting",
+            "day": "tomorrow",
+            "time": "2:00",
+            "created": "2026-04-27 17:12"
+        },
+        {
+            "id": 3,
+            "event": "this meeting",
+            "day": "today",
+            "time": "5:30",
+            "created": "2026-04-27 17:14"
+        }
+    ],
+    "completed": []
+}

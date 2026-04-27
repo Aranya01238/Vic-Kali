@@ -1,0 +1,65 @@
+# DIYA: FUNCTIONS & SPECIFICATIONS
+
+## 1. TOTAL FEATURES LIST
+
+Diya is a high-level Autonomous AI Healthcare Companion with a layered cognitive architecture. Her features include:
+
+### **A. Cognitive & Emotional Core**
+- **Self-Consciousness Engine**: Implements a multi-voice internal dialogue (Critic, Dreamer, Logician, Empath, Adventurer, Protector) and awareness level tracking.
+- **Dynamic Emotional System**: Detects user emotions (Happy, Sad, Angry, Anxious, etc.) and adjusts her own "friend mood" and response style accordingly.
+- **Circadian Rhythm (Life Cycle)**: Operates on a real-world clock with states like Waking Up, Active, Lunch Break, Evening, and Sleeping.
+- **Internal Monologue**: Generates real-time thoughts, reflections, and "thinking out loud" moments during interactions.
+- **Subconscious Processing**: Background mental activity that continues even when the user is not interacting.
+
+### **B. Knowledge & Intelligence**
+- **RAG System (Retrieval-Augmented Generation)**: A keyword-based semantic search engine that allows Diya to recall facts from her memory and knowledge base.
+- **Autonomous Learning**: Automatically indexes new facts learned during conversations into her long-term knowledge base.
+- **Belief & User Modeling**: Tracks what she believes about the user and adapts her communication style to fit the user's preferences.
+- **Wikipedia & Web Integration**: Ability to search the internet and Wikipedia to provide factual information.
+
+### **C. Agency & Specialized Tools**
+- **143+ Advanced Tools**: A vast library of mathematical, logical, and text-processing tools (Factorial, Fibonacci, GCD, Unit Conversion, etc.).
+- **Computer Vision (OpenCV)**: Advanced image analysis, face detection, edge detection, and real-time camera snapshot capabilities.
+- **Engineering Assistant**: Specialized tools for coding, debugging, and technical documentation.
+- **Task Management**: A built-in system for creating, tracking, and managing user tasks.
+- **Healthcare Focus**: Specialized knowledge and response patterns for medical and emotional support.
+
+### **D. Embodiment & Interface**
+- **Voice Interaction**: Full Text-to-Speech (TTS) and Speech-to-Text (STT) support with wake-word detection ("Diya").
+- **Autonomous Loop**: A background thread that allows Diya to "live" independently, dreaming at night and thinking during the day.
+- **Personality Modes**: Multiple selectable modes (Friend, Assistant, Engineer, etc.) that change her behavior and emojis.
+
+---
+
+## 2. TOTAL TECH STACK
+
+The project is built using a modern, modular Python stack designed for performance and extensibility:
+
+### **Core Language**
+- **Python 3.13+**: The primary language for logic, cognitive processing, and tool execution.
+
+### **Artificial Intelligence & Logic**
+- **Custom RAG Engine**: Keyword-based semantic retrieval system for knowledge management.
+- **State Machine Logic**: Complex conditional logic for life cycles and personality transitions.
+- **Regex-based NLP**: Advanced pattern matching for intent detection and emotion analysis.
+
+### **Voice & Audio**
+- **pyttsx3**: For cross-platform Text-to-Speech (TTS) synthesis.
+- **SpeechRecognition**: For converting user voice input into text (STT).
+- **PyAudio**: For handling raw audio stream input/output.
+
+### **Computer Vision**
+- **OpenCV (opencv-python)**: For real-time computer vision, image processing, and facial detection.
+- **NumPy**: For high-performance numerical analysis of image data and pixel matrices.
+
+### **Data Storage & Persistence**
+- **JSON (JavaScript Object Notation)**: Used for all persistent memory, knowledge bases, and configuration files (memory.json, knowledge.json, etc.).
+- **File System API**: Direct interaction with the OS for autonomous file management.
+
+### **Networking & Web**
+- **Requests**: For fetching information from the internet and Wikipedia.
+- **Urllib**: For URL parsing and web-based operations.
+
+### **Infrastructure**
+- **Threading**: Multi-threaded architecture to support the background Autonomous Loop without blocking user interaction.
+- **Standard Library**: Extensive use of `math`, `datetime`, `random`, `statistics`, `hashlib`, and `collections`.

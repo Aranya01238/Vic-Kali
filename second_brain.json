@@ -1,0 +1,219 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "content": "Started learning Python async/await patterns #python #learning",
+      "topic": "programming",
+      "tags": [
+        "python",
+        "learning"
+      ],
+      "created": "2026-04-27 17:18",
+      "importance": "normal",
+      "linked_to": []
+    },
+    {
+      "id": 2,
+      "content": "Remember to review memory architecture next week #review",
+      "topic": "projects",
+      "tags": [
+        "review"
+      ],
+      "created": "2026-04-27 17:18",
+      "importance": "normal",
+      "linked_to": []
+    },
+    {
+      "id": 3,
+      "content": "note: Diya is now fully functional as an external brain with voice support",
+      "topic": "general",
+      "tags": [
+        "diya"
+      ],
+      "created": "2026-04-27 17:18",
+      "importance": "normal",
+      "linked_to": []
+    },
+    {
+      "id": 4,
+      "content": "note: Diya is now my second brain",
+      "topic": "general",
+      "tags": [
+        "diya"
+      ],
+      "created": "2026-04-27 17:19",
+      "importance": "normal",
+      "linked_to": []
+    },
+    {
+      "id": 5,
+      "content": "note: Started working on optimization project #project #learning",
+      "topic": "general",
+      "tags": [
+        "project",
+        "learning"
+      ],
+      "created": "2026-04-27 17:19",
+      "importance": "normal",
+      "linked_to": []
+    }
+  ],
+  "knowledge_base": {
+    "programming": {
+      "notes": [
+        1
+      ],
+      "key_points": []
+    },
+    "projects": {
+      "notes": [
+        2
+      ],
+      "key_points": []
+    },
+    "general": {
+      "notes": [
+        3,
+        4,
+        5
+      ],
+      "key_points": []
+    }
+  },
+  "daily_insights": [
+    {
+      "date": "2026-04-27",
+      "time": "17:18",
+      "insight": "Learned that context-driven mode selection works better than manual",
+      "category": "general"
+    },
+    {
+      "date": "2026-04-27",
+      "time": "17:18",
+      "insight": "Voice system with SAPI backend is much more reliable",
+      "category": "general"
+    },
+    {
+      "date": "2026-04-27",
+      "time": "17:18",
+      "insight": "learned that autonomous systems need clear ethical boundaries",
+      "category": "general"
+    },
+    {
+      "date": "2026-04-27",
+      "time": "17:19",
+      "insight": "insight: Breaking work into 1-hour blocks improves focus",
+      "category": "general"
+    }
+  ],
+  "habits": [
+    {
+      "id": 1,
+      "name": "Daily code review",
+      "frequency": "daily",
+      "started": "2026-04-27",
+      "streak": 0,
+      "completions": []
+    },
+    {
+      "id": 2,
+      "name": "Weekly reflection",
+      "frequency": "weekly",
+      "started": "2026-04-27",
+      "streak": 0,
+      "completions": []
+    },
+    {
+      "id": 3,
+      "name": "add habit: Daily reflection on AI design",
+      "frequency": "daily",
+      "started": "2026-04-27",
+      "streak": 0,
+      "completions": []
+    },
+    {
+      "id": 4,
+      "name": "add habit: Daily learning",
+      "frequency": "daily",
+      "started": "2026-04-27",
+      "streak": 0,
+      "completions": []
+    },
+    {
+      "id": 5,
+      "name": "add habit: 1 hour deep work",
+      "frequency": "daily",
+      "started": "2026-04-27",
+      "streak": 0,
+      "completions": []
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Second Brain Integration",
+      "description": "Add comprehensive memory and knowledge capture to Diya",
+      "tags": [],
+      "started": "2026-04-27",
+      "status": "active",
+      "progress": 0,
+      "milestones": []
+    },
+    {
+      "id": 2,
+      "name": "start project: Perfect the consciousness model",
+      "description": "",
+      "tags": [],
+      "started": "2026-04-27",
+      "status": "active",
+      "progress": 0,
+      "milestones": []
+    },
+    {
+      "id": 3,
+      "name": "start project: Optimize query performance",
+      "description": "",
+      "tags": [],
+      "started": "2026-04-27",
+      "status": "active",
+      "progress": 0,
+      "milestones": []
+    }
+  ],
+  "learning_log": [
+    {
+      "date": "2026-04-27 17:18",
+      "topic": "Memory Systems",
+      "learning": "Effective second brain should track notes, habits, projects, and insights",
+      "source": ""
+    }
+  ],
+  "quick_facts": {},
+  "question_log": [],
+  "tags": {
+    "python": [
+      1
+    ],
+    "learning": [
+      1,
+      5
+    ],
+    "review": [
+      2
+    ],
+    "diya": [
+      3,
+      4
+    ],
+    "project": [
+      5
+    ]
+  },
+  "connections": [],
+  "statistics": {
+    "total_notes": 5,
+    "topics_tracked": 3,
+    "habits_active": 5,
+    "insights_generated": 4
+  }
+}

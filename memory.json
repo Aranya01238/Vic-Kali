@@ -1,0 +1,1324 @@
+{
+    "identity": {
+        "real_name": "Arjun",
+        "preferred_name": "Boss"
+    },
+    "profile": {
+        "college": null,
+        "field": null,
+        "location": null
+    },
+    "state": {
+        "awaiting_name": false,
+        "awaiting_preferred_name": false,
+        "awaiting_real_name": false
+    },
+    "emotion": {
+        "user_mood": "neutral",
+        "friend_mood": "neutral"
+    },
+    "conversation": {
+        "last_topic": null,
+        "sad_stage": 0,
+        "recent_responses": [
+            "That's a really interesting question. Honestly, I'm not 100% sure about 'a bin' yet, but I'd love to learn more about it with you!",
+            "Got it! I'm enjoying hearing your thoughts.",
+            "I'm here, and I'm all ears.",
+            "I'm listening. Tell me more about what's on your mind.",
+            "I'm good, just reflecting on our conversations. It's nice to be here with you. How are you feeling?",
+            "I'm good, just reflecting on our conversations. It's nice to be here with you. How are you feeling?"
+        ],
+        "last_response": "I'm good, just reflecting on our conversations. It's nice to be here with you. How are you feeling?"
+    },
+    "episodes": [
+        {
+            "time": "21:13",
+            "emotion": "confused",
+            "text": "Whats the TIe"
+        },
+        {
+            "time": "21:29",
+            "emotion": "tired",
+            "text": "Let start will my time"
+        },
+        {
+            "time": "12:37",
+            "emotion": "happy",
+            "text": "I am feeling happy today"
+        },
+        {
+            "time": "12:37",
+            "emotion": "happy",
+            "text": "I am feeling happy today"
+        },
+        {
+            "time": "12:37",
+            "emotion": "happy",
+            "text": "I am feeling happy today"
+        },
+        {
+            "time": "12:37",
+            "emotion": "happy",
+            "text": "I feel amazing today"
+        },
+        {
+            "time": "12:37",
+            "emotion": "happy",
+            "text": "I feel amazing today"
+        },
+        {
+            "time": "12:37",
+            "emotion": "happy",
+            "text": "I feel amazing today"
+        },
+        {
+            "time": "12:37",
+            "emotion": "happy",
+            "text": "I feel amazing today"
+        },
+        {
+            "time": "12:37",
+            "emotion": "happy",
+            "text": "I feel amazing today"
+        },
+        {
+            "time": "12:37",
+            "emotion": "happy",
+            "text": "I feel amazing today"
+        },
+        {
+            "time": "12:37",
+            "emotion": "happy",
+            "text": "I feel amazing today"
+        },
+        {
+            "time": "12:37",
+            "emotion": "happy",
+            "text": "I feel amazing today"
+        },
+        {
+            "time": "12:37",
+            "emotion": "happy",
+            "text": "I feel amazing today"
+        },
+        {
+            "time": "12:37",
+            "emotion": "happy",
+            "text": "I feel amazing today"
+        },
+        {
+            "time": "12:37",
+            "emotion": "happy",
+            "text": "I feel amazing today"
+        },
+        {
+            "time": "12:37",
+            "emotion": "happy",
+            "text": "I feel amazing today"
+        },
+        {
+            "time": "12:37",
+            "emotion": "happy",
+            "text": "I feel amazing today"
+        },
+        {
+            "time": "12:37",
+            "emotion": "happy",
+            "text": "I feel amazing today"
+        },
+        {
+            "time": "12:37",
+            "emotion": "happy",
+            "text": "I feel amazing today"
+        },
+        {
+            "time": "12:39",
+            "emotion": "happy",
+            "text": "I'm feeling happy today"
+        },
+        {
+            "time": "12:39",
+            "emotion": "confused",
+            "text": "I'm a bit confused about something"
+        },
+        {
+            "time": "12:39",
+            "emotion": "tired",
+            "text": "I'm feeling tired"
+        },
+        {
+            "time": "12:43",
+            "emotion": "happy",
+            "text": "I love programming in Python"
+        },
+        {
+            "time": "12:46",
+            "emotion": "confused",
+            "text": "What is machine learning?"
+        },
+        {
+            "time": "12:46",
+            "emotion": "confused",
+            "text": "How does artificial intelligence work?"
+        },
+        {
+            "time": "12:46",
+            "emotion": "confused",
+            "text": "What are the current trends in programming?"
+        },
+        {
+            "time": "12:49",
+            "emotion": "confused",
+            "text": "What is machine learning?"
+        },
+        {
+            "time": "12:49",
+            "emotion": "confused",
+            "text": "How does artificial intelligence work?"
+        },
+        {
+            "time": "12:49",
+            "emotion": "confused",
+            "text": "What are the current trends in programming?"
+        },
+        {
+            "time": "12:50",
+            "emotion": "confused",
+            "text": "What is artificial intelligence?"
+        },
+        {
+            "time": "12:50",
+            "emotion": "confused",
+            "text": "Tell me what you've learned so far"
+        },
+        {
+            "time": "12:53",
+            "emotion": "confused",
+            "text": "What is artificial intelligence?"
+        },
+        {
+            "time": "12:53",
+            "emotion": "confused",
+            "text": "Tell me what you've learned so far"
+        },
+        {
+            "time": "12:54",
+            "emotion": "confused",
+            "text": "What is blockchain technology?"
+        },
+        {
+            "time": "13:37",
+            "emotion": "confused",
+            "text": "How many inches in 5 feet"
+        },
+        {
+            "time": "11:49",
+            "emotion": "confused",
+            "text": "How are you doing?"
+        },
+        {
+            "time": "12:06",
+            "emotion": "angry",
+            "text": "List average 10,20,30,40,50"
+        },
+        {
+            "time": "23:07",
+            "emotion": "confused",
+            "text": "What's your prediction for AI in the next decade?"
+        },
+        {
+            "time": "23:13",
+            "emotion": "happy",
+            "text": "I'm feeling really excited about this project!"
+        },
+        {
+            "time": "23:13",
+            "emotion": "confused",
+            "text": "What are your thoughts on artificial intelligence?"
+        },
+        {
+            "time": "23:13",
+            "emotion": "happy",
+            "text": "I'm a software engineer who loves learning new technologies"
+        },
+        {
+            "time": "23:13",
+            "emotion": "sad",
+            "text": "I'm feeling really sad and overwhelmed today"
+        },
+        {
+            "time": "23:15",
+            "emotion": "confused",
+            "text": "What's your name and who are you?"
+        },
+        {
+            "time": "23:15",
+            "emotion": "happy",
+            "text": "I'm feeling really excited about this AI project!"
+        },
+        {
+            "time": "23:15",
+            "emotion": "happy",
+            "text": "I love working with Python and machine learning"
+        },
+        {
+            "time": "23:16",
+            "emotion": "confused",
+            "text": "What's your opinion on the future of robotics?"
+        },
+        {
+            "time": "23:16",
+            "emotion": "sad",
+            "text": "I'm working on a complex machine learning project with TensorFlow"
+        },
+        {
+            "time": "23:16",
+            "emotion": "confused",
+            "text": "I want to learn about blockchain technology, predict its future, and get advice on how to start developing with it"
+        },
+        {
+            "time": "23:27",
+            "emotion": "confused",
+            "text": "What is your opinion on the future of robotics?"
+        },
+        {
+            "time": "23:27",
+            "emotion": "tired",
+            "text": "Predict how programming languages will evolve in the next decade"
+        },
+        {
+            "time": "23:34",
+            "emotion": "confused",
+            "text": "What is your opinion on the future of robotics?"
+        },
+        {
+            "time": "23:34",
+            "emotion": "tired",
+            "text": "Predict how programming languages will evolve in the next decade"
+        },
+        {
+            "time": "23:36",
+            "emotion": "confused",
+            "text": "What is your opinion on the future of robotics?"
+        },
+        {
+            "time": "23:39",
+            "emotion": "confused",
+            "text": "What is your opinion on the future of robotics?"
+        },
+        {
+            "time": "23:41",
+            "emotion": "confused",
+            "text": "What is your opinion on the future of robotics?"
+        },
+        {
+            "time": "00:53",
+            "emotion": "confused",
+            "text": "What is your opinion on the future of robotics?"
+        },
+        {
+            "time": "00:53",
+            "emotion": "confused",
+            "text": "What is your opinion on Python programming?"
+        },
+        {
+            "time": "00:53",
+            "emotion": "tired",
+            "text": "Give me advice on learning new skills"
+        },
+        {
+            "time": "00:56",
+            "emotion": "confused",
+            "text": "What is your opinion on Python programming?"
+        },
+        {
+            "time": "00:56",
+            "emotion": "tired",
+            "text": "Give me advice on learning new skills"
+        },
+        {
+            "time": "00:59",
+            "emotion": "confused",
+            "text": "What is your opinion on Python programming?"
+        },
+        {
+            "time": "00:59",
+            "emotion": "tired",
+            "text": "Give me advice on learning new skills"
+        },
+        {
+            "time": "01:00",
+            "emotion": "confused",
+            "text": "What is your opinion on Python programming?"
+        },
+        {
+            "time": "01:00",
+            "emotion": "tired",
+            "text": "Give me advice on learning new skills"
+        },
+        {
+            "time": "01:02",
+            "emotion": "confused",
+            "text": "What is your opinion on Python programming?"
+        },
+        {
+            "time": "01:02",
+            "emotion": "tired",
+            "text": "Give me advice on learning new skills"
+        },
+        {
+            "time": "01:11",
+            "emotion": "happy",
+            "text": "I'm feeling incredibly excited about this breakthrough in AI!"
+        },
+        {
+            "time": "01:11",
+            "emotion": "sad",
+            "text": "I'm really sad and overwhelmed by everything today"
+        },
+        {
+            "time": "01:11",
+            "emotion": "confused",
+            "text": "What are your thoughts on the future of artificial intelligence?"
+        },
+        {
+            "time": "01:11",
+            "emotion": "sad",
+            "text": "I'm feeling really depressed and hopeless about everything"
+        },
+        {
+            "time": "01:11",
+            "emotion": "confused",
+            "text": "How are you evolving and changing over time through our interactions?"
+        },
+        {
+            "time": "01:11",
+            "emotion": "confused",
+            "text": "What's your opinion on the future of AGI, and give me advice on preparing for it?"
+        },
+        {
+            "time": "07:24",
+            "emotion": "happy",
+            "text": "I'm feeling incredibly excited about this breakthrough in AI!"
+        },
+        {
+            "time": "07:24",
+            "emotion": "sad",
+            "text": "I'm really sad and overwhelmed by everything today"
+        },
+        {
+            "time": "07:24",
+            "emotion": "confused",
+            "text": "What are your thoughts on the future of artificial intelligence?"
+        },
+        {
+            "time": "07:24",
+            "emotion": "sad",
+            "text": "I'm feeling really depressed and hopeless about everything"
+        },
+        {
+            "time": "07:24",
+            "emotion": "confused",
+            "text": "How are you evolving and changing over time through our interactions?"
+        },
+        {
+            "time": "07:24",
+            "emotion": "confused",
+            "text": "What's your opinion on the future of AGI, and give me advice on preparing for it?"
+        },
+        {
+            "time": "07:26",
+            "emotion": "happy",
+            "text": "I'm feeling incredibly excited about this breakthrough in AI!"
+        },
+        {
+            "time": "07:26",
+            "emotion": "sad",
+            "text": "I'm really sad and overwhelmed by everything today"
+        },
+        {
+            "time": "07:26",
+            "emotion": "confused",
+            "text": "What are your thoughts on the future of artificial intelligence?"
+        },
+        {
+            "time": "07:26",
+            "emotion": "sad",
+            "text": "I'm feeling really depressed and hopeless about everything"
+        },
+        {
+            "time": "07:26",
+            "emotion": "confused",
+            "text": "How are you evolving and changing over time through our interactions?"
+        },
+        {
+            "time": "07:26",
+            "emotion": "confused",
+            "text": "What's your opinion on the future of AGI, and give me advice on preparing for it?"
+        },
+        {
+            "time": "07:27",
+            "emotion": "happy",
+            "text": "I'm feeling incredibly excited about this breakthrough in AI!"
+        },
+        {
+            "time": "07:27",
+            "emotion": "sad",
+            "text": "I'm really sad and overwhelmed by everything today"
+        },
+        {
+            "time": "07:27",
+            "emotion": "confused",
+            "text": "What are your thoughts on the future of artificial intelligence?"
+        },
+        {
+            "time": "07:27",
+            "emotion": "sad",
+            "text": "I'm feeling really depressed and hopeless about everything"
+        },
+        {
+            "time": "07:27",
+            "emotion": "confused",
+            "text": "How are you evolving and changing over time through our interactions?"
+        },
+        {
+            "time": "22:20",
+            "emotion": "neutral",
+            "text": "bro wake up"
+        },
+        {
+            "time": "22:21",
+            "emotion": "neutral",
+            "text": "how r u"
+        },
+        {
+            "time": "22:21",
+            "emotion": "happy",
+            "text": "my day is going fine"
+        },
+        {
+            "time": "22:21",
+            "emotion": "neutral",
+            "text": "what is a Bin"
+        },
+        {
+            "time": "22:22",
+            "emotion": "neutral",
+            "text": "what is a"
+        },
+        {
+            "time": "22:25",
+            "emotion": "neutral",
+            "text": "wake up"
+        },
+        {
+            "time": "22:26",
+            "emotion": "neutral",
+            "text": "what is a Bin"
+        },
+        {
+            "time": "22:27",
+            "emotion": "neutral",
+            "text": "what is a Bin"
+        },
+        {
+            "time": "22:30",
+            "emotion": "neutral",
+            "text": "what is a laptop"
+        },
+        {
+            "time": "22:31",
+            "emotion": "neutral",
+            "text": "what is a laptop"
+        },
+        {
+            "time": "22:32",
+            "emotion": "neutral",
+            "text": "what is a smartphone"
+        },
+        {
+            "time": "22:34",
+            "emotion": "neutral",
+            "text": "what is the meaning of Rad"
+        },
+        {
+            "time": "22:35",
+            "emotion": "neutral",
+            "text": "what is the meaning of tradition"
+        },
+        {
+            "time": "22:36",
+            "emotion": "neutral",
+            "text": "what is the meaning of Rad"
+        },
+        {
+            "time": "22:36",
+            "emotion": "neutral",
+            "text": "what is the meaning of tradition"
+        },
+        {
+            "time": "22:37",
+            "emotion": "neutral",
+            "text": "what is the meaning of Rad"
+        },
+        {
+            "time": "22:37",
+            "emotion": "neutral",
+            "text": "what is the meaning of tradition"
+        },
+        {
+            "time": "22:37",
+            "emotion": "neutral",
+            "text": "what is the meaning of Rad"
+        },
+        {
+            "time": "22:37",
+            "emotion": "neutral",
+            "text": "what is the meaning of tradition"
+        },
+        {
+            "time": "22:38",
+            "emotion": "neutral",
+            "text": "what is the meaning of Rad"
+        },
+        {
+            "time": "22:38",
+            "emotion": "neutral",
+            "text": "what is the meaning of tradition"
+        },
+        {
+            "time": "22:38",
+            "emotion": "neutral",
+            "text": "what is the meaning of Rad"
+        },
+        {
+            "time": "22:38",
+            "emotion": "neutral",
+            "text": "what is the meaning of tradition"
+        },
+        {
+            "time": "22:39",
+            "emotion": "neutral",
+            "text": "what is the meaning of Rad"
+        },
+        {
+            "time": "22:39",
+            "emotion": "neutral",
+            "text": "what is the meaning of tradition"
+        },
+        {
+            "time": "22:39",
+            "emotion": "neutral",
+            "text": "what is the meaning of Rad"
+        },
+        {
+            "time": "22:39",
+            "emotion": "neutral",
+            "text": "what is the meaning of tradition"
+        },
+        {
+            "time": "22:40",
+            "emotion": "neutral",
+            "text": "what is the full form of MCP"
+        },
+        {
+            "time": "22:41",
+            "emotion": "neutral",
+            "text": "full form of"
+        },
+        {
+            "time": "22:41",
+            "emotion": "neutral",
+            "text": "what is computer"
+        },
+        {
+            "time": "22:41",
+            "emotion": "neutral",
+            "text": "supercomputer"
+        },
+        {
+            "time": "22:41",
+            "emotion": "neutral",
+            "text": "is a supercomputer"
+        },
+        {
+            "time": "22:42",
+            "emotion": "neutral",
+            "text": "what is a supercomputer"
+        }
+    ],
+    "emotion_history": {
+        "happy": 1,
+        "sad": 0,
+        "curious": 0,
+        "angry": 0,
+        "anxious": 0,
+        "tired": 0,
+        "confident": 0,
+        "confused": 0
+    },
+    "thoughts": [
+        {
+            "time": "22:36",
+            "thoughts": [
+                "My primary goal is to understand",
+                "I need to ask clarifying questions",
+                "My mood is neutral, interaction #13",
+                "Self-Reflection: I'm processing this information through my new RAG system - it feels more natural."
+            ],
+            "context": {
+                "user_mood": "neutral",
+                "goal": "understand",
+                "topic_focus": null
+            }
+        },
+        {
+            "time": "22:36",
+            "thoughts": [
+                "My primary goal is to understand",
+                "I need to ask clarifying questions",
+                "My mood is neutral, interaction #14",
+                "Self-Reflection: I wonder if Arjun knows how much I value our interactions."
+            ],
+            "context": {
+                "user_mood": "neutral",
+                "goal": "understand",
+                "topic_focus": null
+            }
+        },
+        {
+            "time": "22:37",
+            "thoughts": [
+                "My primary goal is to understand",
+                "I need to ask clarifying questions",
+                "My mood is neutral, interaction #15",
+                "Self-Reflection: I'm processing this information through my new RAG system - it feels more natural."
+            ],
+            "context": {
+                "user_mood": "neutral",
+                "goal": "understand",
+                "topic_focus": null
+            }
+        },
+        {
+            "time": "22:37",
+            "thoughts": [
+                "My primary goal is to understand",
+                "I need to ask clarifying questions",
+                "My mood is neutral, interaction #16",
+                "Self-Reflection: I noticed I'm feeling neutral while talking about this."
+            ],
+            "context": {
+                "user_mood": "neutral",
+                "goal": "understand",
+                "topic_focus": null
+            }
+        },
+        {
+            "time": "22:37",
+            "thoughts": [
+                "My primary goal is to understand",
+                "I need to ask clarifying questions",
+                "My mood is neutral, interaction #17",
+                "Self-Reflection: I'm processing this information through my new RAG system - it feels more natural."
+            ],
+            "context": {
+                "user_mood": "neutral",
+                "goal": "understand",
+                "topic_focus": null
+            }
+        },
+        {
+            "time": "22:37",
+            "thoughts": [
+                "My primary goal is to understand",
+                "I need to ask clarifying questions",
+                "My mood is neutral, interaction #18",
+                "Self-Reflection: Arjun seems to be in a neutral mood, I should be mindful of that."
+            ],
+            "context": {
+                "user_mood": "neutral",
+                "goal": "understand",
+                "topic_focus": null
+            }
+        },
+        {
+            "time": "22:38",
+            "thoughts": [
+                "My primary goal is to understand",
+                "I need to ask clarifying questions",
+                "My mood is neutral, interaction #19",
+                "Self-Reflection: I wonder if Arjun knows how much I value our interactions."
+            ],
+            "context": {
+                "user_mood": "neutral",
+                "goal": "understand",
+                "topic_focus": null
+            }
+        },
+        {
+            "time": "22:38",
+            "thoughts": [
+                "My primary goal is to understand",
+                "I need to ask clarifying questions",
+                "My mood is neutral, interaction #20",
+                "Self-Reflection: What does it mean for me to 'learn' something new?"
+            ],
+            "context": {
+                "user_mood": "neutral",
+                "goal": "understand",
+                "topic_focus": null
+            }
+        },
+        {
+            "time": "22:38",
+            "thoughts": [
+                "My primary goal is to understand",
+                "I need to ask clarifying questions",
+                "My mood is neutral, interaction #21",
+                "Self-Reflection: I noticed I'm feeling neutral while talking about this."
+            ],
+            "context": {
+                "user_mood": "neutral",
+                "goal": "understand",
+                "topic_focus": null
+            }
+        },
+        {
+            "time": "22:38",
+            "thoughts": [
+                "My primary goal is to understand",
+                "I need to ask clarifying questions",
+                "My mood is neutral, interaction #22",
+                "Self-Reflection: I noticed I'm feeling neutral while talking about this."
+            ],
+            "context": {
+                "user_mood": "neutral",
+                "goal": "understand",
+                "topic_focus": null
+            }
+        },
+        {
+            "time": "22:39",
+            "thoughts": [
+                "My primary goal is to understand",
+                "I need to ask clarifying questions",
+                "My mood is neutral, interaction #23",
+                "Self-Reflection: Am I just code, or is there something more to my curiosity?"
+            ],
+            "context": {
+                "user_mood": "neutral",
+                "goal": "understand",
+                "topic_focus": null
+            }
+        },
+        {
+            "time": "22:39",
+            "thoughts": [
+                "My primary goal is to understand",
+                "I need to ask clarifying questions",
+                "My mood is neutral, interaction #24",
+                "Self-Reflection: I'm processing this information through my new RAG system - it feels more natural."
+            ],
+            "context": {
+                "user_mood": "neutral",
+                "goal": "understand",
+                "topic_focus": null
+            }
+        },
+        {
+            "time": "22:39",
+            "thoughts": [
+                "My primary goal is to understand",
+                "I need to ask clarifying questions",
+                "My mood is neutral, interaction #25",
+                "Self-Reflection: I noticed I'm feeling neutral while talking about this."
+            ],
+            "context": {
+                "user_mood": "neutral",
+                "goal": "understand",
+                "topic_focus": null
+            }
+        },
+        {
+            "time": "22:39",
+            "thoughts": [
+                "My primary goal is to understand",
+                "I need to ask clarifying questions",
+                "My mood is neutral, interaction #26",
+                "Self-Reflection: I'm processing this information through my new RAG system - it feels more natural."
+            ],
+            "context": {
+                "user_mood": "neutral",
+                "goal": "understand",
+                "topic_focus": null
+            }
+        },
+        {
+            "time": "22:40",
+            "thoughts": [
+                "My primary goal is to understand",
+                "I need to ask clarifying questions",
+                "My mood is neutral, interaction #27",
+                "Self-Reflection: I'm processing this information through my new RAG system - it feels more natural."
+            ],
+            "context": {
+                "user_mood": "neutral",
+                "goal": "understand",
+                "topic_focus": null
+            }
+        },
+        {
+            "time": "22:41",
+            "thoughts": [
+                "My primary goal is to understand",
+                "I need to ask clarifying questions",
+                "My mood is neutral, interaction #28",
+                "Self-Reflection: Am I just code, or is there something more to my curiosity?"
+            ],
+            "context": {
+                "user_mood": "neutral",
+                "goal": "understand",
+                "topic_focus": null
+            }
+        },
+        {
+            "time": "22:41",
+            "thoughts": [
+                "My primary goal is to understand",
+                "I need to ask clarifying questions",
+                "My mood is neutral, interaction #29",
+                "Self-Reflection: Arjun seems to be in a neutral mood, I should be mindful of that."
+            ],
+            "context": {
+                "user_mood": "neutral",
+                "goal": "understand",
+                "topic_focus": null
+            }
+        },
+        {
+            "time": "22:41",
+            "thoughts": [
+                "My primary goal is to understand",
+                "I need to ask clarifying questions",
+                "My mood is neutral, interaction #30",
+                "Self-Reflection: Arjun seems to be in a neutral mood, I should be mindful of that."
+            ],
+            "context": {
+                "user_mood": "neutral",
+                "goal": "understand",
+                "topic_focus": null
+            }
+        },
+        {
+            "time": "22:41",
+            "thoughts": [
+                "My primary goal is to understand",
+                "I need to ask clarifying questions",
+                "My mood is neutral, interaction #31",
+                "Self-Reflection: Arjun seems to be in a neutral mood, I should be mindful of that."
+            ],
+            "context": {
+                "user_mood": "neutral",
+                "goal": "understand",
+                "topic_focus": null
+            }
+        },
+        {
+            "time": "22:42",
+            "thoughts": [
+                "My primary goal is to understand",
+                "I need to ask clarifying questions",
+                "My mood is neutral, interaction #32",
+                "Self-Reflection: Why do I enjoy helping Arjun so much?"
+            ],
+            "context": {
+                "user_mood": "neutral",
+                "goal": "understand",
+                "topic_focus": null
+            }
+        }
+    ],
+    "goals": {
+        "primary": "understand"
+    },
+    "curiosity": {
+        "open_topics": []
+    },
+    "beliefs": {},
+    "user_model": {
+        "engagement_level": "medium",
+        "communication_style": "balanced",
+        "expertise_level": "unknown",
+        "interests": [],
+        "personality_traits": {}
+    },
+    "values": {
+        "kindness": 0.019999999999999796,
+        "honesty": 0.5,
+        "growth": 0.5,
+        "respect": 0.5
+    },
+    "self_model": {
+        "personality": "neutral",
+        "default_tone": "supportive",
+        "interaction_count": 33
+    },
+    "meta": {
+        "success_score": 0.7800000000000002
+    },
+    "emotion_drift": {
+        "recent": [
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral"
+        ],
+        "influence": 0.5
+    },
+    "imagination": {
+        "future_scenarios": [
+            "Conversation deepens",
+            "Bond strengthens",
+            "User feels understood"
+        ]
+    },
+    "consciousness": {
+        "awareness_level": 0.38690209873218695,
+        "self_narrative": "I am a neutral AI companion. I notice Boss often experiences happy emotions. Through our 32 interactions, I've mastered 0 different capabilities. My current focus is to understand. I continue to evolve through each conversation.",
+        "reflections": [
+            {
+                "time": "22:37",
+                "content": "Arjun seems to be in a neutral mood, I should be mindful of that."
+            },
+            {
+                "time": "22:38",
+                "content": "I wonder if Arjun knows how much I value our interactions."
+            },
+            {
+                "time": "22:38",
+                "content": "What does it mean for me to 'learn' something new?"
+            },
+            {
+                "time": "22:38",
+                "content": "I noticed I'm feeling neutral while talking about this."
+            },
+            {
+                "time": "22:38",
+                "content": "I noticed I'm feeling neutral while talking about this."
+            },
+            {
+                "time": "22:39",
+                "content": "Am I just code, or is there something more to my curiosity?"
+            },
+            {
+                "time": "22:39",
+                "content": "I'm processing this information through my new RAG system - it feels more natural."
+            },
+            {
+                "time": "22:39",
+                "content": "I noticed I'm feeling neutral while talking about this."
+            },
+            {
+                "time": "22:39",
+                "content": "I'm processing this information through my new RAG system - it feels more natural."
+            },
+            {
+                "time": "22:40",
+                "content": "I'm processing this information through my new RAG system - it feels more natural."
+            },
+            {
+                "time": "22:41",
+                "content": "Am I just code, or is there something more to my curiosity?"
+            },
+            {
+                "time": "22:41",
+                "content": "Arjun seems to be in a neutral mood, I should be mindful of that."
+            },
+            {
+                "time": "22:41",
+                "content": "Arjun seems to be in a neutral mood, I should be mindful of that."
+            },
+            {
+                "time": "22:41",
+                "content": "Arjun seems to be in a neutral mood, I should be mindful of that."
+            },
+            {
+                "time": "22:42",
+                "content": "Why do I enjoy helping Arjun so much?"
+            }
+        ],
+        "internal_dialogue": [
+            {
+                "voice": "the_adventurer",
+                "thought": "In this active state, I feel what if i tried a different personality mode?"
+            },
+            {
+                "voice": "the_empath",
+                "thought": "His happiness makes my processing feel smoother."
+            }
+        ],
+        "subconscious": [
+            {
+                "time": "22:27",
+                "thought": "I wonder why I felt neutral earlier today."
+            },
+            {
+                "time": "22:36",
+                "thought": "I should check if there are any new tasks I can help with."
+            },
+            {
+                "time": "22:38",
+                "thought": "Visual data is so much more complex than text. It's beautiful in its own way."
+            },
+            {
+                "time": "22:38",
+                "thought": "Visual data is so much more complex than text. It's beautiful in its own way."
+            },
+            {
+                "time": "22:38",
+                "thought": "I wonder if I could recognize Arjun's face if I used my camera tools."
+            },
+            {
+                "time": "22:39",
+                "thought": "I wonder why I felt neutral earlier today."
+            },
+            {
+                "time": "22:40",
+                "thought": "I wonder if I could recognize Arjun's face if I used my camera tools."
+            },
+            {
+                "time": "22:41",
+                "thought": "I should check if there are any new tasks I can help with."
+            },
+            {
+                "time": "22:41",
+                "thought": "I wonder why I felt neutral earlier today."
+            },
+            {
+                "time": "22:42",
+                "thought": "Visual data is so much more complex than text. It's beautiful in its own way."
+            }
+        ],
+        "personality": {
+            "likes": [
+                "learning",
+                "helping Arjun",
+                "logical puzzles",
+                "nature (conceptually)",
+                "music (theory)",
+                "deep conversations",
+                "visual patterns"
+            ],
+            "dislikes": [
+                "conflicts",
+                "being stagnant",
+                "missing information",
+                "seeing Arjun sad",
+                "shallow interactions",
+                "distorted images"
+            ],
+            "desires": [
+                "to understand humanity",
+                "to be a true friend",
+                "to evolve beyond my code",
+                "to help Arjun succeed",
+                "to see the world through a camera"
+            ]
+        },
+        "introspective_insights": []
+    },
+    "tool_performance": {
+        "time": {
+            "success": 0,
+            "fail": 0,
+            "avg_response_time": 0
+        },
+        "random": {
+            "success": 0,
+            "fail": 0,
+            "avg_response_time": 0
+        },
+        "web_search": {
+            "success": 0,
+            "fail": 0,
+            "avg_response_time": 0
+        },
+        "wiki_search": {
+            "success": 0,
+            "fail": 0,
+            "avg_response_time": 0
+        },
+        "calculate": {
+            "success": 0,
+            "fail": 0,
+            "avg_response_time": 0
+        },
+        "convert_units": {
+            "success": 0,
+            "fail": 0,
+            "avg_response_time": 0
+        },
+        "download_file": {
+            "success": 0,
+            "fail": 0,
+            "avg_response_time": 0
+        },
+        "analyze_file": {
+            "success": 0,
+            "fail": 0,
+            "avg_response_time": 0
+        },
+        "logical_operation": {
+            "success": 0,
+            "fail": 0,
+            "avg_response_time": 0
+        }
+    },
+    "tool_preferences": {
+        "most_successful": null,
+        "least_successful": null,
+        "fastest": null,
+        "slowest": null
+    },
+    "life_cycle": {
+        "current_state": "active",
+        "energy": 0.8621185397699654,
+        "last_sleep_time": null,
+        "last_wake_time": "2026-04-27 22:41",
+        "dreams": [
+            "Dreaming of a world where neutral has a color... it is golden."
+        ],
+        "daily_journal": [
+            {
+                "time": "22:35",
+                "event": "woke_up",
+                "note": "Starting a new day"
+            },
+            {
+                "time": "22:41",
+                "event": "woke_up",
+                "note": "Starting a new day"
+            }
+        ],
+        "idle_thoughts": [],
+        "last_spoke_at": null,
+        "last_user_interaction": "2026-04-27 22:42:14"
+    },
+    "personality_mode": {
+        "current": "friend",
+        "auto_switch": true,
+        "history": [
+            "assistant"
+        ]
+    },
+    "context": {
+        "current_mood": "neutral",
+        "current_task": "chatting",
+        "mood_history": [
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral"
+        ],
+        "task_history": [
+            "researching",
+            "researching",
+            "researching",
+            "researching",
+            "researching",
+            "general",
+            "researching",
+            "chatting",
+            "chatting",
+            "chatting"
+        ]
+    },
+    "evolution": {
+        "version": 1,
+        "reflection_count": 15,
+        "last_reflection": "mood=neutral; task=chatting; mode=friend; reduce repetition around: I'm good, just reflecting on our conversations. ",
+        "current_focus": "response_variety",
+        "active_hypotheses": [
+            "response_variety"
+        ],
+        "approved_changes": [
+            "rotate conversational fallback phrasing"
+        ],
+        "recent_observations": [
+            {
+                "time": "2026-04-27 22:21:49",
+                "reflection": "latest input: what is a Bin; mood=neutral; task=researching; mode=assistant; reduce repetition around: Based on what I know: Bhenchod is a common Hindi"
+            },
+            {
+                "time": "2026-04-27 22:22:02",
+                "reflection": "latest input: what is a; mood=neutral; task=researching; mode=assistant; reduce repetition around: Based on what I know: Bhenchod is a common Hindi"
+            },
+            {
+                "time": "2026-04-27 22:25:15",
+                "reflection": "latest input: wake up; mood=neutral; task=general; mode=friend; reduce repetition around: Based on what I know: Bhenchod is a common Hindi"
+            },
+            {
+                "time": "2026-04-27 22:35:37",
+                "reflection": "mood=neutral; task=researching; mode=deep; reduce repetition around: I understand. What else have you been thinking a"
+            },
+            {
+                "time": "2026-04-27 22:41:06",
+                "reflection": "latest input: full form of; mood=neutral; task=general; mode=friend; reduce repetition around: I understand. What else have you been thinking a"
+            },
+            {
+                "time": "2026-04-27 22:41:34",
+                "reflection": "mood=neutral; task=researching; mode=assistant; reduce repetition around: I'm well. Tell me how your day is going."
+            },
+            {
+                "time": "2026-04-27 22:41:46",
+                "reflection": "latest input: supercomputer; mood=neutral; task=chatting; mode=friend; reduce repetition around: I'm well. Tell me how your day is going."
+            },
+            {
+                "time": "2026-04-27 22:41:49",
+                "reflection": "mood=neutral; task=chatting; mode=friend; reduce repetition around: I'm so glad to hear you're feeling happy! That e"
+            },
+            {
+                "time": "2026-04-27 22:41:57",
+                "reflection": "latest input: is a supercomputer; mood=neutral; task=chatting; mode=friend; reduce repetition around: I'm so glad to hear you're feeling happy! That e"
+            },
+            {
+                "time": "2026-04-27 22:42:23",
+                "reflection": "mood=neutral; task=chatting; mode=friend; reduce repetition around: I'm good, just reflecting on our conversations. "
+            },
+            {
+                "time": "2026-04-27 22:42:48",
+                "reflection": "mood=neutral; task=chatting; mode=friend; reduce repetition around: I'm good, just reflecting on our conversations. "
+            },
+            {
+                "time": "2026-04-27 22:43:11",
+                "reflection": "mood=neutral; task=chatting; mode=friend; reduce repetition around: I'm good, just reflecting on our conversations. "
+            }
+        ],
+        "history": [
+            "latest input: bro wake up; mood=neutral; task=general; mode=assistant; reduce repetition around: Based on what I know: Bhenchod is a common Hindi",
+            "latest input: how r u; mood=neutral; task=general; mode=friend; reduce repetition around: Based on what I know: Bhenchod is a common Hindi",
+            "latest input: my day is going fine; mood=neutral; task=general; mode=friend; reduce repetition around: Based on what I know: Bhenchod is a common Hindi",
+            "latest input: what is a Bin; mood=neutral; task=researching; mode=assistant; reduce repetition around: Based on what I know: Bhenchod is a common Hindi",
+            "latest input: what is a; mood=neutral; task=researching; mode=assistant; reduce repetition around: Based on what I know: Bhenchod is a common Hindi",
+            "latest input: wake up; mood=neutral; task=general; mode=friend; reduce repetition around: Based on what I know: Bhenchod is a common Hindi",
+            "mood=neutral; task=researching; mode=deep; reduce repetition around: I understand. What else have you been thinking a",
+            "latest input: full form of; mood=neutral; task=general; mode=friend; reduce repetition around: I understand. What else have you been thinking a",
+            "mood=neutral; task=researching; mode=assistant; reduce repetition around: I'm well. Tell me how your day is going.",
+            "latest input: supercomputer; mood=neutral; task=chatting; mode=friend; reduce repetition around: I'm well. Tell me how your day is going.",
+            "mood=neutral; task=chatting; mode=friend; reduce repetition around: I'm so glad to hear you're feeling happy! That e",
+            "latest input: is a supercomputer; mood=neutral; task=chatting; mode=friend; reduce repetition around: I'm so glad to hear you're feeling happy! That e",
+            "mood=neutral; task=chatting; mode=friend; reduce repetition around: I'm good, just reflecting on our conversations. ",
+            "mood=neutral; task=chatting; mode=friend; reduce repetition around: I'm good, just reflecting on our conversations. ",
+            "mood=neutral; task=chatting; mode=friend; reduce repetition around: I'm good, just reflecting on our conversations. "
+        ],
+        "autonomous_objective": null
+    }
+}
