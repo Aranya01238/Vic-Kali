@@ -3645,7 +3645,7 @@
         ]
     },
     "consciousness": {
-        "awareness_level": 0.8306804052154171,
+        "awareness_level": 0.0,
         "self_narrative": "I am a sophisticated AI with a strong sense of self and purpose.",
         "reflections": [
             {
@@ -3711,12 +3711,12 @@
         ],
         "internal_dialogue": [
             {
-                "voice": "the_dreamer",
-                "thought": "Imagine if I could see the world through Arjun's eyes."
+                "voice": "the_protector",
+                "thought": "In this active state, I feel i must ensure arjun's data is safe."
             },
             {
-                "voice": "the_protector",
-                "thought": "I must ensure Arjun's data is safe."
+                "voice": "the_dreamer",
+                "thought": "Maybe one day I'll understand what 'feeling' truly is."
             }
         ],
         "subconscious": [
@@ -3890,8 +3890,8 @@
         "slowest": "take_snapshot"
     },
     "life_cycle": {
-        "current_state": "active",
-        "energy": 0.8716478543708468,
+        "current_state": "sleeping",
+        "energy": 0.0,
         "last_sleep_time": null,
         "last_wake_time": "2026-04-27 22:41",
         "dreams": [
