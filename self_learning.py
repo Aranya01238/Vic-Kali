@@ -328,6 +328,17 @@ def get_learning_summary():
     return summary
 
 
+def get_learning_status():
+    """Return the current self-learning status."""
+    state = "active" if _learning_active else "paused"
+    summary = get_learning_summary()
+
+    if summary == "No learnings recorded yet.":
+        return f"Self-learning is {state}. No learnings recorded yet."
+
+    return f"Self-learning is {state}.\n\n{summary}"
+
+
 def integrate_learning_into_conversation(context=""):
     """Get a learning fact to naturally integrate into conversation."""
     from brain import load_memory

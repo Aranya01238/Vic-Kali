@@ -176,6 +176,7 @@ def analyze_context(text, memory):
 
 def get_context_summary(memory):
     """Get a human-readable summary of the current context."""
+    identity = memory.get("identity", {})
     ctx = memory.get("context", {})
     mood = ctx.get("current_mood", "neutral")
     task = ctx.get("current_task", "general")
@@ -188,4 +189,10 @@ def get_context_summary(memory):
     else:
         dominant = "neutral"
 
-    return f"Mood: {mood} (trending: {dominant}) | Task: {task}"
+    summary = f"Mood: {mood} (trending: {dominant}) | Task: {task}"
+
+    avatar_path = identity.get("avatar_path")
+    if avatar_path:
+        summary += f" | Avatar: {avatar_path}"
+
+    return summary

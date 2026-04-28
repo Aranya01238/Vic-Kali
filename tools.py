@@ -1,5 +1,7 @@
 import random
 import os
+import webbrowser
+import subprocess
 from datetime import datetime
 
 # -------- HACKER / PEER TOOLS --------
@@ -148,6 +150,42 @@ def list_dir(path="."):
         return "\n".join(os.listdir(path))
     except Exception as e:
         return f"Error listing directory: {e}"
+
+def open_target(target):
+    """Open a local file/folder or URL using the default system handler."""
+    try:
+        if not target:
+            return "Error: No target provided."
+        if target.startswith(("http://", "https://")):
+            webbrowser.open(target)
+            return f"Opened URL: {target}"
+        if hasattr(os, "startfile"):
+            os.startfile(target)
+            return f"Opened: {target}"
+        webbrowser.open(target)
+        return f"Opened target: {target}"
+    except Exception as e:
+        return f"Error opening target: {e}"
+
+def open_folder(path):
+    """Open a folder in the system file explorer."""
+    return open_target(path)
+
+def open_url(url):
+    """Open a URL in the default browser."""
+    return open_target(url)
+
+def open_youtube(query=""):
+    """Open YouTube, optionally with a search query."""
+    base = "https://www.youtube.com"
+    if query:
+        from urllib.parse import quote_plus
+        return open_target(f"{base}/results?search_query={quote_plus(query)}")
+    return open_target(base)
+
+def open_app(app_path_or_name):
+    """Open an application by path, name, or registered shell target."""
+    return open_target(app_path_or_name)
 
 # -------- KNOWLEDGE BASE TOOLS --------
 

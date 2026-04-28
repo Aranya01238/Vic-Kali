@@ -10,7 +10,8 @@
             "User mentioned robot",
             "User mentioned arduino",
             "User mentioned programming",
-            "User mentioned ai"
+            "User mentioned ai",
+            "User mentioned robot"
         ],
         "verification_is it true that pyth": [
             "Verified: Is it true that Python was created by Guido van Rossum",
@@ -149,7 +150,10 @@
             "100 fahrenheit = 37.777778 celsius",
             "212.0 fahrenheit = 100 celsius",
             "100 fahrenheit = 37.777778 celsius",
-            "212.0 fahrenheit = 100 celsius"
+            "212.0 fahrenheit = 100 celsius",
+            "100 fahrenheit = 37.777778 celsius",
+            "100 fahrenheit = 37.777778 celsius",
+            "100 fahrenheit = 37.777778 celsius"
         ],
         "logical_operations": [
             "and(true, false) = False",
@@ -205,7 +209,10 @@
             "25 * 4 + 10 = 110",
             "25 * 4 + 10 = 110",
             "2 + 2 = 4",
-            "2 + 2 = 4"
+            "2 + 2 = 4",
+            "10 + 5 = 15",
+            "10 + 5 = 15",
+            "10 + 5 = 15"
         ],
         "tool_learning": [
             "\ud83c\udfaf time is highly reliable (100.0% success); \ud83c\udfaf calculate is highly reliable (100.0% success); \ud83c\udfaf convert_units is highly reliable (100.0% success); \ud83c\udfaf logical_operation is highly reliable (100.0% success); \ud83c\udfaf show_tool_performance is highly reliable (100.0% success); \ud83c\udfaf list_all_tools is highly reliable (100.0% success); \ud83c\udfaf factorial is highly reliable (100.0% success); \u26a1 Fast tools: time, web_search, wiki_search, calculate, convert_units, logical_operation, show_tool_performance, list_all_tools, factorial, to_uppercase, base64_encode, fibonacci, prime_check",
@@ -226,7 +233,15 @@
             "\ud83c\udfaf time is highly reliable (100.0% success); \ud83c\udfaf web_search is highly reliable (100.0% success); \ud83c\udfaf wiki_search is highly reliable (100.0% success); \ud83c\udfaf calculate is highly reliable (93.8% success); \ud83c\udfaf convert_units is highly reliable (100.0% success); \ud83c\udfaf logical_operation is highly reliable (100.0% success); \ud83c\udfaf show_tool_performance is highly reliable (100.0% success); \ud83c\udfaf list_all_tools is highly reliable (100.0% success); \ud83c\udfaf factorial is highly reliable (100.0% success); \ud83c\udfaf to_uppercase is highly reliable (100.0% success); \ud83c\udfaf base64_encode is highly reliable (100.0% success); \ud83c\udfaf fibonacci is highly reliable (100.0% success); \ud83c\udfaf extract_emails is highly reliable (100.0% success); \ud83c\udfaf compress_knowledge is highly reliable (100.0% success); \ud83c\udfaf show_compressed_knowledge is highly reliable (100.0% success); \ud83c\udfaf form_opinion is highly reliable (100.0% success); \ud83c\udfaf make_prediction is highly reliable (100.0% success); \ud83c\udfaf give_advice is highly reliable (100.0% success); \ud83c\udfaf reason_about is highly reliable (100.0% success); \ud83c\udfaf synthesize_knowledge is highly reliable (100.0% success); \ud83c\udfaf query_facts is highly reliable (100.0% success); \ud83c\udfaf update_belief is highly reliable (100.0% success); \ud83c\udfaf list_dir is highly reliable (100.0% success); \ud83c\udfaf save_fact is highly reliable (100.0% success); \ud83c\udfaf generate_uuid is highly reliable (100.0% success); \ud83c\udfaf read_file is highly reliable (100.0% success); \ud83c\udfaf list_average is highly reliable (100.0% success); \u26a1 Fast tools: time, web_search, wiki_search, calculate, convert_units, logical_operation, show_tool_performance, list_all_tools, factorial, to_uppercase, base64_encode, fibonacci, prime_check, word_count, reverse_text, extract_emails, md5_hash, sha256_hash, compress_knowledge, show_compressed_knowledge, analyze_knowledge_patterns, generate_knowledge_summary, form_opinion, make_prediction, give_advice, reason_about, synthesize_knowledge, query_facts, update_belief, list_dir, save_fact, correlation, generate_uuid, read_file, list_average, write_file",
             "\ud83c\udfaf time is highly reliable (100.0% success); \ud83c\udfaf web_search is highly reliable (100.0% success); \ud83c\udfaf wiki_search is highly reliable (100.0% success); \ud83c\udfaf calculate is highly reliable (93.8% success); \ud83c\udfaf convert_units is highly reliable (100.0% success); \ud83c\udfaf logical_operation is highly reliable (100.0% success); \ud83c\udfaf show_tool_performance is highly reliable (100.0% success); \ud83c\udfaf list_all_tools is highly reliable (100.0% success); \ud83c\udfaf factorial is highly reliable (100.0% success); \ud83c\udfaf to_uppercase is highly reliable (100.0% success); \ud83c\udfaf base64_encode is highly reliable (100.0% success); \ud83c\udfaf fibonacci is highly reliable (100.0% success); \ud83c\udfaf extract_emails is highly reliable (100.0% success); \ud83c\udfaf compress_knowledge is highly reliable (100.0% success); \ud83c\udfaf show_compressed_knowledge is highly reliable (100.0% success); \ud83c\udfaf form_opinion is highly reliable (100.0% success); \ud83c\udfaf make_prediction is highly reliable (100.0% success); \ud83c\udfaf give_advice is highly reliable (100.0% success); \ud83c\udfaf reason_about is highly reliable (100.0% success); \ud83c\udfaf synthesize_knowledge is highly reliable (100.0% success); \ud83c\udfaf query_facts is highly reliable (100.0% success); \ud83c\udfaf update_belief is highly reliable (100.0% success); \ud83c\udfaf list_dir is highly reliable (100.0% success); \ud83c\udfaf save_fact is highly reliable (100.0% success); \ud83c\udfaf generate_uuid is highly reliable (100.0% success); \ud83c\udfaf read_file is highly reliable (100.0% success); \ud83c\udfaf list_average is highly reliable (100.0% success); \u26a1 Fast tools: time, web_search, wiki_search, calculate, convert_units, logical_operation, show_tool_performance, list_all_tools, factorial, to_uppercase, base64_encode, fibonacci, prime_check, word_count, reverse_text, extract_emails, md5_hash, sha256_hash, compress_knowledge, show_compressed_knowledge, analyze_knowledge_patterns, generate_knowledge_summary, form_opinion, make_prediction, give_advice, reason_about, synthesize_knowledge, query_facts, update_belief, list_dir, save_fact, correlation, generate_uuid, read_file, list_average, write_file",
             "\ud83c\udfaf time is highly reliable (100.0% success); \ud83c\udfaf web_search is highly reliable (100.0% success); \ud83c\udfaf wiki_search is highly reliable (100.0% success); \ud83c\udfaf calculate is highly reliable (93.8% success); \ud83c\udfaf convert_units is highly reliable (100.0% success); \ud83c\udfaf logical_operation is highly reliable (100.0% success); \ud83c\udfaf show_tool_performance is highly reliable (100.0% success); \ud83c\udfaf list_all_tools is highly reliable (100.0% success); \ud83c\udfaf factorial is highly reliable (100.0% success); \ud83c\udfaf to_uppercase is highly reliable (100.0% success); \ud83c\udfaf base64_encode is highly reliable (100.0% success); \ud83c\udfaf fibonacci is highly reliable (100.0% success); \ud83c\udfaf extract_emails is highly reliable (100.0% success); \ud83c\udfaf compress_knowledge is highly reliable (100.0% success); \ud83c\udfaf show_compressed_knowledge is highly reliable (100.0% success); \ud83c\udfaf form_opinion is highly reliable (100.0% success); \ud83c\udfaf make_prediction is highly reliable (100.0% success); \ud83c\udfaf give_advice is highly reliable (100.0% success); \ud83c\udfaf reason_about is highly reliable (100.0% success); \ud83c\udfaf synthesize_knowledge is highly reliable (100.0% success); \ud83c\udfaf query_facts is highly reliable (100.0% success); \ud83c\udfaf update_belief is highly reliable (100.0% success); \ud83c\udfaf list_dir is highly reliable (100.0% success); \ud83c\udfaf save_fact is highly reliable (100.0% success); \ud83c\udfaf generate_uuid is highly reliable (100.0% success); \ud83c\udfaf read_file is highly reliable (100.0% success); \ud83c\udfaf list_average is highly reliable (100.0% success); \u26a1 Fast tools: time, web_search, wiki_search, calculate, convert_units, logical_operation, show_tool_performance, list_all_tools, factorial, to_uppercase, base64_encode, fibonacci, prime_check, word_count, reverse_text, extract_emails, md5_hash, sha256_hash, compress_knowledge, show_compressed_knowledge, analyze_knowledge_patterns, generate_knowledge_summary, form_opinion, make_prediction, give_advice, reason_about, synthesize_knowledge, query_facts, update_belief, list_dir, save_fact, correlation, generate_uuid, read_file, list_average, write_file",
-            "\ud83c\udfaf time is highly reliable (100.0% success); \ud83c\udfaf web_search is highly reliable (100.0% success); \ud83c\udfaf wiki_search is highly reliable (100.0% success); \ud83c\udfaf calculate is highly reliable (93.8% success); \ud83c\udfaf convert_units is highly reliable (100.0% success); \ud83c\udfaf logical_operation is highly reliable (100.0% success); \ud83c\udfaf show_tool_performance is highly reliable (100.0% success); \ud83c\udfaf list_all_tools is highly reliable (100.0% success); \ud83c\udfaf factorial is highly reliable (100.0% success); \ud83c\udfaf to_uppercase is highly reliable (100.0% success); \ud83c\udfaf base64_encode is highly reliable (100.0% success); \ud83c\udfaf fibonacci is highly reliable (100.0% success); \ud83c\udfaf extract_emails is highly reliable (100.0% success); \ud83c\udfaf compress_knowledge is highly reliable (100.0% success); \ud83c\udfaf show_compressed_knowledge is highly reliable (100.0% success); \ud83c\udfaf form_opinion is highly reliable (100.0% success); \ud83c\udfaf make_prediction is highly reliable (100.0% success); \ud83c\udfaf give_advice is highly reliable (100.0% success); \ud83c\udfaf reason_about is highly reliable (100.0% success); \ud83c\udfaf synthesize_knowledge is highly reliable (100.0% success); \ud83c\udfaf query_facts is highly reliable (100.0% success); \ud83c\udfaf update_belief is highly reliable (100.0% success); \ud83c\udfaf list_dir is highly reliable (100.0% success); \ud83c\udfaf save_fact is highly reliable (100.0% success); \ud83c\udfaf generate_uuid is highly reliable (100.0% success); \ud83c\udfaf read_file is highly reliable (100.0% success); \ud83c\udfaf list_average is highly reliable (100.0% success); \u26a1 Fast tools: time, web_search, wiki_search, calculate, convert_units, logical_operation, show_tool_performance, list_all_tools, factorial, to_uppercase, base64_encode, fibonacci, prime_check, word_count, reverse_text, extract_emails, md5_hash, sha256_hash, compress_knowledge, show_compressed_knowledge, analyze_knowledge_patterns, generate_knowledge_summary, form_opinion, make_prediction, give_advice, reason_about, synthesize_knowledge, query_facts, update_belief, list_dir, save_fact, correlation, generate_uuid, read_file, list_average, write_file"
+            "\ud83c\udfaf time is highly reliable (100.0% success); \ud83c\udfaf web_search is highly reliable (100.0% success); \ud83c\udfaf wiki_search is highly reliable (100.0% success); \ud83c\udfaf calculate is highly reliable (93.8% success); \ud83c\udfaf convert_units is highly reliable (100.0% success); \ud83c\udfaf logical_operation is highly reliable (100.0% success); \ud83c\udfaf show_tool_performance is highly reliable (100.0% success); \ud83c\udfaf list_all_tools is highly reliable (100.0% success); \ud83c\udfaf factorial is highly reliable (100.0% success); \ud83c\udfaf to_uppercase is highly reliable (100.0% success); \ud83c\udfaf base64_encode is highly reliable (100.0% success); \ud83c\udfaf fibonacci is highly reliable (100.0% success); \ud83c\udfaf extract_emails is highly reliable (100.0% success); \ud83c\udfaf compress_knowledge is highly reliable (100.0% success); \ud83c\udfaf show_compressed_knowledge is highly reliable (100.0% success); \ud83c\udfaf form_opinion is highly reliable (100.0% success); \ud83c\udfaf make_prediction is highly reliable (100.0% success); \ud83c\udfaf give_advice is highly reliable (100.0% success); \ud83c\udfaf reason_about is highly reliable (100.0% success); \ud83c\udfaf synthesize_knowledge is highly reliable (100.0% success); \ud83c\udfaf query_facts is highly reliable (100.0% success); \ud83c\udfaf update_belief is highly reliable (100.0% success); \ud83c\udfaf list_dir is highly reliable (100.0% success); \ud83c\udfaf save_fact is highly reliable (100.0% success); \ud83c\udfaf generate_uuid is highly reliable (100.0% success); \ud83c\udfaf read_file is highly reliable (100.0% success); \ud83c\udfaf list_average is highly reliable (100.0% success); \u26a1 Fast tools: time, web_search, wiki_search, calculate, convert_units, logical_operation, show_tool_performance, list_all_tools, factorial, to_uppercase, base64_encode, fibonacci, prime_check, word_count, reverse_text, extract_emails, md5_hash, sha256_hash, compress_knowledge, show_compressed_knowledge, analyze_knowledge_patterns, generate_knowledge_summary, form_opinion, make_prediction, give_advice, reason_about, synthesize_knowledge, query_facts, update_belief, list_dir, save_fact, correlation, generate_uuid, read_file, list_average, write_file",
+            "\u26a1 Fast tools: list_dir, update_belief",
+            "\u26a1 Fast tools: list_dir, update_belief",
+            "\ud83c\udfaf update_belief is highly reliable (100.0% success); \u26a1 Fast tools: list_dir, update_belief",
+            "\ud83c\udfaf update_belief is highly reliable (100.0% success); \u26a1 Fast tools: list_dir, update_belief, read_file",
+            "\ud83c\udfaf update_belief is highly reliable (100.0% success); \u26a1 Fast tools: list_dir, update_belief, read_file; \ud83d\udc0c Slow tools: web_search, take_snapshot",
+            "\ud83c\udfaf update_belief is highly reliable (100.0% success); \u26a1 Fast tools: list_dir, update_belief, read_file; \ud83d\udc0c Slow tools: web_search, take_snapshot",
+            "\ud83c\udfaf update_belief is highly reliable (100.0% success); \u26a1 Fast tools: list_dir, update_belief, read_file; \ud83d\udc0c Slow tools: web_search, take_snapshot",
+            "\ud83c\udfaf update_belief is highly reliable (100.0% success); \u26a1 Fast tools: list_dir, update_belief, read_file; \ud83d\udc0c Slow tools: web_search, take_snapshot"
         ],
         "knowledge_compression": [
             "Compressed 110 facts into 4 insights",
@@ -253,7 +268,25 @@
             "Compressed 347 facts into 4 insights",
             "Compressed 353 facts into 4 insights",
             "Compressed 377 facts into 4 insights",
-            "Compressed 377 facts into 4 insights"
+            "Compressed 377 facts into 4 insights",
+            "Compressed 400 facts into 4 insights",
+            "Compressed 406 facts into 4 insights",
+            "Compressed 408 facts into 4 insights",
+            "Compressed 413 facts into 4 insights",
+            "Compressed 416 facts into 4 insights",
+            "Compressed 416 facts into 4 insights",
+            "Compressed 417 facts into 4 insights",
+            "Compressed 417 facts into 4 insights",
+            "Compressed 420 facts into 4 insights",
+            "Compressed 430 facts into 4 insights",
+            "Compressed 424 facts into 4 insights",
+            "Compressed 434 facts into 4 insights",
+            "Compressed 432 facts into 4 insights",
+            "Compressed 436 facts into 4 insights",
+            "Compressed 438 facts into 4 insights",
+            "Compressed 452 facts into 4 insights",
+            "Compressed 445 facts into 4 insights",
+            "Compressed 443 facts into 4 insights"
         ],
         "knowledge_summary": [
             "Generated comprehensive summary of 111 knowledge items"
@@ -293,7 +326,8 @@
             "Opinion on : Based on my knowledge, I have a positive view of . This is based on 319 pieces of information I've gathered.  (confidence: 0.8)",
             "Opinion on robot: I have a balanced perspective on robot.  (confidence: 0.5)",
             "Opinion on exam: I have a balanced perspective on exam.  (confidence: 0.5)",
-            "Opinion on programming: I have a balanced perspective on programming.  (confidence: 0.5)"
+            "Opinion on programming: I have a balanced perspective on programming.  (confidence: 0.5)",
+            "Opinion on robot: I have a balanced perspective on robot. This is based on 4 pieces of information I've gathered.  (confidence: 0.6)"
         ],
         "predictions": [
             "Prediction for AI development: I predict AI development will likely show positive development in the next 5 years. This is based on patterns I've observed in 1 related data points. Your positive outlook may contribute to favorable outcomes.  (confidence: 0.7)",
@@ -370,7 +404,11 @@
             "Reasoned about consciousness in AI: Multi-source analysis completed",
             "Reasoned about understanding: Multi-source analysis completed",
             "Reasoned about consciousness in AI: Multi-source analysis completed",
-            "Reasoned about why your voice is not coming: Multi-source analysis completed"
+            "Reasoned about why your voice is not coming: Multi-source analysis completed",
+            "Reasoned about How does gravity work: Multi-source analysis completed",
+            "Reasoned about How does light bend around objects: Multi-source analysis completed",
+            "Reasoned about How does photosynthesis work: Multi-source analysis completed",
+            "Reasoned about How does the immune system work: Multi-source analysis completed"
         ],
         "knowledge_synthesis": [
             "Synthesized programming and artificial intelligence: 0 connections found",
@@ -498,13 +536,185 @@
             "MCP may refer to:",
             "MCP may refer to:",
             "MCP may refer to:"
+        ],
+        "wiki_diya": [
+            "Diya may refer to:"
+        ],
+        "wiki_Current state of polygamy in the Latter Day Saint movement": [
+            "Joseph Smith, the founder of the Latter Day Saint movement, privately taught and practiced polygamy. After Smith's death in 1844, the church he established splintered into several competing groups.",
+            "Joseph Smith, the founder of the Latter Day Saint movement, privately taught and practiced polygamy. After Smith's death in 1844, the church he established splintered into several competing groups."
+        ],
+        "wiki_what's up": [
+            "What's Up or variants may refer to:",
+            "What's Up or variants may refer to:"
+        ],
+        "wiki_Be Yourself Tonight": [
+            "Be Yourself Tonight is the fourth studio album by British pop duo Eurythmics, released on 29 April 1985 by RCA Records. It spawned four singles \u2013 \"Would I Lie to You?\", \"There Must Be an Angel (Playing with My Heart)\", \"Sisters Are Doin' It for Themselves\" (a duet with Aretha Franklin) and \"It's Alright (Baby's Coming Back)\"."
+        ],
+        "wiki_who are you": [
+            "Who Are You is the eighth studio album by the English rock band the Who, released on 18 August 1978 by Polydor Records in the United Kingdom and on 21 August 1978 by MCA Records in the United States. Although the album received mixed reviews from critics, it was a commercial success, peaking at number 2 on the US Billboard 200 chart and number 6 on the UK Albums Chart."
+        ],
+        "wiki_For Your Purpose": [
+            "Victory Christian Fellowship of the Philippines, commonly known as Victory, is an evangelical multi-site church based in Taguig, Philippines. It is a member of Every Nation Churches.",
+            "Victory Christian Fellowship of the Philippines, commonly known as Victory, is an evangelical multi-site church based in Taguig, Philippines. It is a member of Every Nation Churches.",
+            "Victory Christian Fellowship of the Philippines, commonly known as Victory, is an evangelical multi-site church based in Taguig, Philippines. It is a member of Every Nation Churches."
+        ],
+        "wiki_python": [
+            "Python may refer to:"
+        ],
+        "wiki_healthcare": [
+            "Health care, or healthcare, is the improvement or maintenance of health via the prevention, diagnosis, treatment, amelioration or cure of disease, illness, injury, and other physical and mental impairments in people. Health care is delivered by health professionals and allied health fields."
+        ],
+        "wiki_neural networks": [
+            "A neural network is a group of interconnected units called neurons that send signals to one another. Neurons can be either biological cells or mathematical models.",
+            "A neural network is a group of interconnected units called neurons that send signals to one another. Neurons can be either biological cells or mathematical models.",
+            "A neural network is a group of interconnected units called neurons that send signals to one another. Neurons can be either biological cells or mathematical models."
+        ],
+        "wiki_camera": [
+            "A camera is an instrument used to capture and store images and videos, either digitally via an electronic image sensor, or chemically via a light-sensitive material such as photographic film. As a pivotal technology in the fields of photography and videography, cameras have played a significant role in the progression of visual arts, media, entertainment, surveillance, and scientific research."
+        ],
+        "wiki_OpenCV": [
+            "OpenCV (Open Source Computer Vision Library) is a library of programming functions mainly for real-time computer vision. Originally developed by Intel, it was later supported by Willow Garage, then Itseez (which was later acquired by Intel).",
+            "OpenCV (Open Source Computer Vision Library) is a library of programming functions mainly for real-time computer vision.",
+            "OpenCV (Open Source Computer Vision Library) is a library of programming functions mainly for real-time computer vision."
+        ],
+        "wiki_memory": [
+            "Memory is the faculty of the mind by which data or information is encoded, stored, and retrieved when needed. It is the retention of information over time for the purpose of influencing future action."
+        ],
+        "wiki_robotics": [
+            "Robotics is the interdisciplinary study and practice of the design, construction, operation, and use of robots. A roboticist is someone who specializes in robotics."
+        ],
+        "wiki_how's it going": [
+            "How's It Going (Original French title: Comment \u00e7a va) is a French film directed by Jean-Luc Godard and Anne-Marie Mi\u00e9ville in 1975, released at the Cannes Film Festival in 1976 and then in French cinemas in 1978. It is the third film made by the couple that year, marking their move from Paris to Grenoble."
+        ],
+        "wiki_how are you": [
+            "The All-Ukrainian mental health program \"How are you?\" is an initiative aimed at building a quality system of providing services in the field of psychosocial support and developing a culture of mental health care. The initiative was launched by Olena Zelenska, the First Lady of Ukraine, in May 2022.",
+            "The All-Ukrainian mental health program \"How are you?\" is an initiative aimed at building a quality system of providing services in the field of psychosocial support and developing a culture of mental health care. The initiative was launched by Olena Zelenska, the First Lady of Ukraine, in May 2022.",
+            "The All-Ukrainian mental health program \"How are you?\" is an initiative aimed at building a quality system of providing services in the field of psychosocial support and developing a culture of mental health care. The initiative was launched by Olena Zelenska, the First Lady of Ukraine, in May 2022.",
+            "The All-Ukrainian mental health program \"How are you?\" is an initiative aimed at building a quality system of providing services in the field of psychosocial support and developing a culture of mental health care. The initiative was launched by Olena Zelenska, the First Lady of Ukraine, in May 2022.",
+            "The All-Ukrainian mental health program \"How are you?\" is an initiative aimed at building a quality system of providing services in the field of psychosocial support and developing a culture of mental health care. The initiative was launched by Olena Zelenska, the First Lady of Ukraine, in May 2022.",
+            "The All-Ukrainian mental health program \"How are you?\" is an initiative aimed at building a quality system of providing services in the field of psychosocial support and developing a culture of mental health care. The initiative was launched by Olena Zelenska, the First Lady of Ukraine, in May 2022."
+        ],
+        "wiki_gpu": [
+            "A graphics processing unit (GPU) is a specialized electronic circuit designed for digital image processing and to accelerate computer graphics, being present either as a component on a discrete graphics card or embedded on motherboards, mobile phones, personal computers, workstations, and game consoles. GPUs are increasingly being used for artificial intelligence (AI) processing due to linear algebra acceleration, which is also used extensively in graphics processing."
+        ],
+        "wiki_windows": [
+            "Windows is a proprietary graphical operating system developed and marketed by Microsoft. Windows is grouped into families that cater to particular sectors of the computing industry \u2013 Windows for personal computers, Windows Server for servers, and Windows IoT for embedded systems."
+        ],
+        "wiki_GPU": [
+            "A graphics processing unit (GPU) is a specialized electronic circuit designed for digital image processing and to accelerate computer graphics, being present either as a component on a discrete graphics card or embedded on motherboards, mobile phones, personal computers, workstations, and game consoles. GPUs are increasingly being used for artificial intelligence (AI) processing due to linear algebra acceleration, which is also used extensively in graphics processing."
+        ],
+        "wiki_voice": [
+            "The human voice consists of sound made by a human being using the vocal tract, including talking, singing, laughing, crying, screaming, shouting, humming or yelling. The human voice  is specifically a part of human sound production in which the vocal folds (vocal cords) are the primary sound source."
+        ],
+        "wiki_artificial intelligence": [
+            "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in engineering, mathematics and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximize their chances of achieving defined goals."
+        ],
+        "wiki_quantum entanglement": [
+            "Quantum entanglement is the phenomenon wherein the quantum state of each particle in a group cannot be described independently of the state of the others, even when the particles are separated by a large distance. The topic of quantum entanglement is at the heart of the disparity between classical physics and quantum physics: entanglement is a primary feature of quantum mechanics not present in classical mechanics.",
+            "Quantum entanglement is the phenomenon wherein the quantum state of each particle in a group cannot be described independently of the state of the others, even when the particles are separated by a large distance. The topic of quantum entanglement is at the heart of the disparity between classical physics and quantum physics: entanglement is a primary feature of quantum mechanics not present in classical mechanics.",
+            "Quantum entanglement is the phenomenon wherein the quantum state of each particle in a group cannot be described independently of the state of the others, even when the particles are separated by a large distance. The topic of quantum entanglement is at the heart of the disparity between classical physics and quantum physics: entanglement is a primary feature of quantum mechanics not present in classical mechanics.",
+            "Quantum entanglement is the phenomenon wherein the quantum state of each particle in a group cannot be described independently of the state of the others, even when the particles are separated by a large distance. The topic of quantum entanglement is at the heart of the disparity between classical physics and quantum physics: entanglement is a primary feature of quantum mechanics not present in classical mechanics.",
+            "Quantum entanglement is the phenomenon wherein the quantum state of each particle in a group cannot be described independently of the state of the others, even when the particles are separated by a large distance. The topic of quantum entanglement is at the heart of the disparity between classical physics and quantum physics: entanglement is a primary feature of quantum mechanics not present in classical mechanics.",
+            "Quantum entanglement is the phenomenon wherein the quantum state of each particle in a group cannot be described independently of the state of the others, even when the particles are separated by a large distance. The topic of quantum entanglement is at the heart of the disparity between classical physics and quantum physics: entanglement is a primary feature of quantum mechanics not present in classical mechanics."
+        ],
+        "wiki_theory of relativity": [
+            "The theory of relativity comprises two physics theories by Albert Einstein: special relativity and general relativity, proposed and published in 1905 and 1915, respectively. Special relativity applies to all physical phenomena in the absence of gravity."
+        ],
+        "wiki_black hole": [
+            "A black hole is an astronomical body so compact that its gravity prevents anything, including light, from escaping. Albert Einstein's theory of general relativity, which describes gravitation as the curvature of spacetime, predicts that any sufficiently compact mass will form a black hole.",
+            "A black hole is an astronomical body so compact that its gravity prevents anything, including light, from escaping. Albert Einstein's theory of general relativity, which describes gravitation as the curvature of spacetime, predicts that any sufficiently compact mass will form a black hole."
+        ],
+        "wiki_speed of light": [
+            "The speed of light in vacuum, often called simply the speed of light and commonly denoted c, is a universal physical constant exactly equal to 299792458 m\u22c5s\u22121. It is exact because, by international agreement, a metre is defined as the length of the path travelled by light in vacuum during a time interval of 1\u2044299792458 second.",
+            "The speed of light in vacuum, often called simply the speed of light and commonly denoted c, is a universal physical constant exactly equal to 299792458 m\u22c5s\u22121. It is exact because, by international agreement, a metre is defined as the length of the path travelled by light in vacuum during a time interval of 1\u2044299792458 second."
+        ],
+        "wiki_Heisenberg uncertainty principle": [
+            "The uncertainty principle, also known as Heisenberg's indeterminacy principle, is a fundamental concept in quantum mechanics. It states that there is a limit to the precision with which certain pairs of physical properties, such as position and momentum, can be simultaneously known."
+        ],
+        "wiki_entropy": [
+            "Entropy is a thermodynamic state variable that quantifies the probabilistic distribution of macrostates in a system. The term and the concept are used in diverse fields, from classical thermodynamics, where it was first recognized, to the microscopic description of nature in statistical physics, and to the principles of information theory."
+        ],
+        "wiki_force field": [
+            "Force field may refer to:"
+        ],
+        "wiki_Newton's laws of motion": [
+            "Newton's laws of motion are three physical laws that describe the relationship between the motion of an object and the forces acting on it. These laws, which provide the basis for Newtonian mechanics, can be paraphrased as follows:\n\nA body remains at rest, or in motion at a constant speed in a straight line, unless it is acted upon by a force."
+        ],
+        "wiki_friction": [
+            "Friction is the force resisting the relative motion of solid surfaces, fluid layers, and material elements sliding or grinding against each other. Types of friction include dry, fluid, lubricated, skin, and internal \u2013 an incomplete list."
+        ],
+        "wiki_quantum superposition": [
+            "Quantum superposition is a fundamental principle of quantum mechanics that states that linear combinations of solutions to the Schr\u00f6dinger equation are also solutions of the Schr\u00f6dinger equation. This follows from the fact that the Schr\u00f6dinger equation is a linear differential equation in time and position."
+        ],
+        "wiki_standard model of physics": [
+            "The Standard Model of particle physics is the theory describing three of the four known fundamental forces (electromagnetic, weak and strong interactions \u2013 excluding gravity) in the universe and classifying all known elementary particles. It was developed in stages throughout the latter half of the 20th century, through the work of many scientists worldwide, with the current formulation being finalized in the mid-1970s upon experimental confirmation of the existence of quarks."
+        ],
+        "wiki_dark matter": [
+            "In astronomy and cosmology, dark matter is an invisible and hypothetical form of matter that does not interact with electromagnetic radiation, including light. Dark matter is implied by gravitational effects that cannot be explained by general relativity unless more matter is present than can be observed."
+        ],
+        "wiki_nuclear fusion": [
+            "Nuclear fusion is a reaction in which two or more atomic nuclei combine to form a larger nucleus. The difference in mass between the reactants and products is manifested as either the release or the absorption of energy."
+        ],
+        "wiki_photoelectric effect": [
+            "The photoelectric effect is the emission of electrons from a material caused by electromagnetic radiation such as ultraviolet light. Electrons emitted in this manner are called photoelectrons."
+        ],
+        "wiki_time dilation": [
+            "Time dilation is the difference in elapsed time as measured by two clocks, either because of a relative velocity, a consequence of special relativity, or a difference in gravitational potential between their locations due to gravitational time dilation. When unspecified, \"time dilation\" usually refers to the effect due to velocity."
+        ],
+        "wiki_plasma": [
+            "Plasma or plasm may refer to:"
+        ],
+        "wiki_quarks": [
+            "A quark ( ) is a type of elementary particle and a fundamental constituent of matter. Quarks combine to form composite particles called hadrons, the most stable of which are protons and neutrons, the components of atomic nuclei."
+        ],
+        "wiki_cosmological constant": [
+            "In cosmology, the cosmological constant (usually denoted by the Greek capital letter lambda: \u039b), alternatively called Einstein's cosmological constant, \nis a coefficient that Albert Einstein initially added to his  field equations of general relativity. He later removed it; however, much later it was revived to express the energy density of space, or vacuum energy, that arises in quantum mechanics."
+        ],
+        "wiki_chemical bond": [
+            "A chemical bond is the association of atoms or ions to form molecules, crystals, and other structures. The bond may result from the electrostatic force between oppositely charged ions as in ionic bonds or through the sharing of electrons as in covalent bonds, or some combination of these effects."
+        ],
+        "wiki_pH": [
+            "In chemistry, pH ( or ;  pee-AYCH) is a logarithmic scale used to specify the acidity or basicity of aqueous solutions. Acidic solutions (solutions with higher concentrations of hydrogen (H+) cations) are measured to have lower pH values than basic or alkaline solutions."
+        ],
+        "wiki_electrochemistry": [
+            "Electrochemistry is the branch of physical chemistry concerned with the relationship between electrical potential difference and identifiable chemical change. These reactions involve electrons moving via an electronically conducting phase (typically an external electric circuit, but not necessarily, as in electroless plating) between electrodes separated by an ionically conducting and electronically insulating electrolyte (or ionic species in a solution).",
+            "Electrochemistry is the branch of physical chemistry concerned with the relationship between electrical potential difference and identifiable chemical change. These reactions involve electrons moving via an electronically conducting phase (typically an external electric circuit, but not necessarily, as in electroless plating) between electrodes separated by an ionically conducting and electronically insulating electrolyte (or ionic species in a solution)."
+        ],
+        "wiki_wave-particle duality": [
+            "Wave\u2013particle duality is the concept in quantum mechanics that fundamental entities of the universe, like photons and electrons, exhibit particle or wave properties according to the experimental circumstances. It expresses the inability of the classical concepts such as particle or wave to fully describe the behavior of quantum objects."
+        ],
+        "wiki_photosynthesis": [
+            "Photosynthesis ( FOH-t\u0259-SINTH-\u0259-sis) is a system of biological processes by which photopigment-bearing autotrophic organisms, such as most plants, algae and cyanobacteria, convert light energy \u2014 typically from sunlight \u2014 into the chemical energy necessary to fuel their metabolism. The term photosynthesis usually refers to oxygenic photosynthesis, a process that releases oxygen as a byproduct of water splitting."
+        ],
+        "wiki_DNA": [
+            "Deoxyribonucleic acid (; DNA) is a polymer composed of two polynucleotide chains that coil around each other to form a double helix. The polymer carries genetic instructions for the development, functioning, growth and reproduction of all known organisms and many viruses."
+        ],
+        "wiki_evolution": [
+            "Evolution is the change in the heritable characteristics of biological populations over successive generations. It occurs when evolutionary processes such as genetic drift and natural selection act on genetic variation, resulting in certain characteristics becoming more or less common within a population over successive generations."
+        ],
+        "wiki_protein": [
+            "Proteins are large biomolecules and macromolecules that comprise one or more long chains of amino acid residues. Proteins perform a vast array of functions within organisms, including catalysing metabolic reactions, DNA replication, responding to stimuli, providing structure to cells and organisms, and transporting molecules from one location to another."
+        ],
+        "wiki_heart": [
+            "The heart is a muscular organ found in humans and other animals. This organ pumps blood through the blood vessels."
+        ],
+        "wiki_A Mormon Maid": [
+            "A Mormon Maid is a 1917 American silent drama film directed by Robert Z. Leonard and written by Charles Sarver and Paul West. While traveling westward with her family, Dora must face the proposal to become a Mormon elder's sixth wife."
+        ],
+        "wiki_cells": [
+            "Cell most often refers to:"
+        ],
+        "wiki_mitosis": [
+            "Mitosis () is a part of the cell cycle in eukaryotic cells in which replicated chromosomes are separated into two new nuclei. Cell division by mitosis is an equational division which gives rise to genetically identical cells in which the total number of chromosomes is maintained.",
+            "Mitosis () is a part of the cell cycle in eukaryotic cells in which replicated chromosomes are separated into two new nuclei. Cell division by mitosis is an equational division which gives rise to genetically identical cells in which the total number of chromosomes is maintained."
         ]
     },
     "beliefs": {
         "user_emotional_pattern": {
-            "belief": "User often feels confused",
+            "belief": "User often feels curious",
             "confidence": 0.7,
-            "updated": "2026-04-27 19:15:35"
+            "updated": "2026-04-28 12:16:06"
         },
         "user_interests": {
             "belief": "interested in AI and robotics",
@@ -921,7 +1131,41 @@
         "wiki_tradition:1": 0.9,
         "wiki_supercomputer:1": 0.9,
         "wiki_MCP:1": 0.9,
-        "wiki_MCP:2": 0.9
+        "wiki_MCP:2": 0.9,
+        "wiki_what's up:1": 0.9,
+        "user_interests:7": 0.8,
+        "knowledge_compression:30": 1.0,
+        "wiki_neural networks:1": 0.9,
+        "wiki_Current state of polygamy in the Latter Day Saint movement:1": 0.9,
+        "knowledge_compression:32": 1.0,
+        "tool_learning:20": 0.8,
+        "conversions:35": 1.0,
+        "wiki_OpenCV:2": 0.9,
+        "tool_learning:24": 0.8,
+        "conversions:36": 1.0,
+        "tool_learning:25": 0.8,
+        "conversions:37": 1.0,
+        "wiki_For Your Purpose:1": 0.9,
+        "wiki_For Your Purpose:2": 0.9,
+        "wiki_neural networks:2": 0.9,
+        "tool_learning:26": 0.8,
+        "wiki_black hole:1": 0.9,
+        "wiki_speed of light:1": 0.9,
+        "wiki_how are you:1": 0.9,
+        "wiki_quantum entanglement:1": 0.9,
+        "wiki_how are you:2": 0.9,
+        "wiki_quantum entanglement:2": 0.9,
+        "wiki_electrochemistry:1": 0.9,
+        "wiki_mitosis:1": 0.9,
+        "wiki_quantum entanglement:3": 0.9,
+        "wiki_how are you:3": 0.9,
+        "calculations:33": 1.0,
+        "wiki_quantum entanglement:4": 0.9,
+        "wiki_how are you:4": 0.9,
+        "calculations:34": 1.0,
+        "wiki_quantum entanglement:5": 0.9,
+        "wiki_how are you:5": 0.9,
+        "calculations:35": 1.0
     },
     "fact_sources": {
         "general:0": "user_conversation",
@@ -1292,7 +1536,41 @@
         "wiki_tradition:1": "user_conversation",
         "wiki_supercomputer:1": "user_conversation",
         "wiki_MCP:1": "user_conversation",
-        "wiki_MCP:2": "user_conversation"
+        "wiki_MCP:2": "user_conversation",
+        "wiki_what's up:1": "user_conversation",
+        "user_interests:7": "user_conversation",
+        "knowledge_compression:30": "user_conversation",
+        "wiki_neural networks:1": "user_conversation",
+        "wiki_Current state of polygamy in the Latter Day Saint movement:1": "user_conversation",
+        "knowledge_compression:32": "user_conversation",
+        "tool_learning:20": "user_conversation",
+        "conversions:35": "user_conversation",
+        "wiki_OpenCV:2": "user_conversation",
+        "tool_learning:24": "user_conversation",
+        "conversions:36": "user_conversation",
+        "tool_learning:25": "user_conversation",
+        "conversions:37": "user_conversation",
+        "wiki_For Your Purpose:1": "user_conversation",
+        "wiki_For Your Purpose:2": "user_conversation",
+        "wiki_neural networks:2": "user_conversation",
+        "tool_learning:26": "user_conversation",
+        "wiki_black hole:1": "user_conversation",
+        "wiki_speed of light:1": "user_conversation",
+        "wiki_how are you:1": "user_conversation",
+        "wiki_quantum entanglement:1": "user_conversation",
+        "wiki_how are you:2": "user_conversation",
+        "wiki_quantum entanglement:2": "user_conversation",
+        "wiki_electrochemistry:1": "user_conversation",
+        "wiki_mitosis:1": "user_conversation",
+        "wiki_quantum entanglement:3": "user_conversation",
+        "wiki_how are you:3": "user_conversation",
+        "calculations:33": "user_conversation",
+        "wiki_quantum entanglement:4": "user_conversation",
+        "wiki_how are you:4": "user_conversation",
+        "calculations:34": "user_conversation",
+        "wiki_quantum entanglement:5": "user_conversation",
+        "wiki_how are you:5": "user_conversation",
+        "calculations:35": "user_conversation"
     },
-    "last_updated": "2026-04-27 23:01:54"
+    "last_updated": "2026-04-28 12:26:48"
 }

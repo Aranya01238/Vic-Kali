@@ -5,6 +5,11 @@ from tools import (
     read_file,
     write_file,
     list_dir,
+    open_target,
+    open_folder,
+    open_url,
+    open_youtube,
+    open_app,
     save_fact,
     query_facts,
     update_belief,
@@ -53,13 +58,22 @@ from healthcare_tools import (
     satisfaction_check
 )
 
-# Import vision tools
-from vision_tools import (
-    analyze_image,
-    detect_faces,
-    take_snapshot,
-    get_edge_detection
-)
+# Vision tools are imported lazily to avoid heavy dependencies like OpenCV
+def _lazy_import_vision():
+    import importlib
+    return importlib.import_module('vision_tools')
+
+def analyze_image(*args, **kwargs):
+    return _lazy_import_vision().analyze_image(*args, **kwargs)
+
+def detect_faces(*args, **kwargs):
+    return _lazy_import_vision().detect_faces(*args, **kwargs)
+
+def take_snapshot(*args, **kwargs):
+    return _lazy_import_vision().take_snapshot(*args, **kwargs)
+
+def get_edge_detection(*args, **kwargs):
+    return _lazy_import_vision().get_edge_detection(*args, **kwargs)
 
 # Import all advanced tools
 from advanced_tools import ADVANCED_TOOLS
@@ -74,6 +88,11 @@ TOOLS = {
     "read_file": read_file,
     "write_file": write_file,
     "list_dir": list_dir,
+    "open_target": open_target,
+    "open_folder": open_folder,
+    "open_url": open_url,
+    "open_youtube": open_youtube,
+    "open_app": open_app,
     "save_fact": save_fact,
     "query_facts": query_facts,
     "update_belief": update_belief,

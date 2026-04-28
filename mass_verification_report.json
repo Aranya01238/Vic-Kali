@@ -1,0 +1,302 @@
+{
+  "timestamp": "2026-04-28T12:04:59.382882",
+  "identity_ok": true,
+  "context_summary": "Mood: neutral (trending: neutral) | Task: general | Avatar: img/baymax-avatar.png",
+  "counts": {
+    "social": 140,
+    "memory": 40,
+    "system": 90,
+    "action": 10,
+    "research": 20
+  },
+  "failures": [],
+  "tool_checks": {
+    "web_search": "\ud83c\udf10 Found information for 'artificial intelligence':\n\nArtificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in engineering, mathematics and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximize their chances of achieving defined goals.",
+    "wiki_search": "OpenCV (Open Source Computer Vision Library) is a library of programming functions mainly for real-time computer vision.",
+    "take_snapshot": "\ud83d\udcf8 Snapshot saved to mass_verification_snapshot.jpg",
+    "open_folder": "Opened: .",
+    "open_youtube": "Opened URL: https://www.youtube.com/results?search_query=Diya+test"
+  },
+  "samples": [
+    {
+      "category": "social",
+      "prompt": "How are you evolving?",
+      "response": "*thinking out loud* I want to learn everything about human creativity.\n\nEvolution focus: response_variety | reflections: 103 | last approved change: work on diversify conversational replies | autonomous objective: diversify conversational replies",
+      "tool_delta": {
+        "web_search": 0,
+        "wiki_search": 0,
+        "take_snapshot": 0,
+        "open_youtube": 0,
+        "open_folder": 0,
+        "open_target": 0,
+        "open_app": 0
+      }
+    },
+    {
+      "category": "memory",
+      "prompt": "What facts have you learned?",
+      "response": "I remember you as Boss. Current mood: neutral; state: active. Current personality mode: assistant. Consciousness awareness: 52%. Open topics: ai, robotics. Recent thought: {'time': '11:57', 'thoughts': ['My primary goal is to understand', 'I need to ask clarifying questions', 'My mood is neutral, interaction #186', \"I'm curious about their ai, robotics\", 'Self-Reflection: Arjun seems to be in a neutral mood, I should be mindful of that.'], 'context': {'user_mood': 'neutral', 'goal': 'understand', 'topic_focus': 'robotics'}}. Recent episode: What facts have you learned?. Context: mood=neutral, task=studying. My RAG, memory, and personality systems are active and connected.",
+      "tool_delta": {
+        "web_search": 0,
+        "wiki_search": 0,
+        "take_snapshot": 0,
+        "open_youtube": 0,
+        "open_folder": 0,
+        "open_target": 0,
+        "open_app": 0
+      }
+    },
+    {
+      "category": "social",
+      "prompt": "What are you thinking about?",
+      "response": "\ud83e\udd14 I couldn't find a clear definition for 'you thinking about' on the web. Maybe try a more specific search?",
+      "tool_delta": {
+        "web_search": 0,
+        "wiki_search": 0,
+        "take_snapshot": 0,
+        "open_youtube": 0,
+        "open_folder": 0,
+        "open_target": 0,
+        "open_app": 0
+      }
+    },
+    {
+      "category": "social",
+      "prompt": "Do you have feelings?",
+      "response": "(I was just thinking to myself... The Dreamer said: 'Maybe one day I'll understand what 'feeling' truly is.')\n\nThat's a deep question. I am a neutral AI companion. I notice Boss often experiences curious emotions. Through our 189 interactions, I've mastered 2 different capabilities. My current focus is to understand. I continue to evolve through each conversation. My awareness level is currently at 52%. Internally, I've been reflecting: 'I noticed I'm feeling neutral while talking about this.'",
+      "tool_delta": {
+        "web_search": 0,
+        "wiki_search": 0,
+        "take_snapshot": 0,
+        "open_youtube": 0,
+        "open_folder": 0,
+        "open_target": 0,
+        "open_app": 0
+      }
+    },
+    {
+      "category": "social",
+      "prompt": "What's up?",
+      "response": "I'm good, thanks for asking. What's on your mind?",
+      "tool_delta": {
+        "web_search": 0,
+        "wiki_search": 0,
+        "take_snapshot": 0,
+        "open_youtube": 0,
+        "open_folder": 0,
+        "open_target": 0,
+        "open_app": 0
+      }
+    },
+    {
+      "category": "memory",
+      "prompt": "Show your consciousness status",
+      "response": "I remember you as Boss. Current mode: friend. Consciousness awareness: 52%. Open topics: ai, robotics. My RAG, memory, and agent-thought systems are active.",
+      "tool_delta": {
+        "web_search": 0,
+        "wiki_search": 0,
+        "take_snapshot": 0,
+        "open_youtube": 0,
+        "open_folder": 0,
+        "open_target": 0,
+        "open_app": 0
+      }
+    },
+    {
+      "category": "system",
+      "prompt": "What time is it?",
+      "response": "2026-04-28 11:57:18",
+      "tool_delta": {
+        "web_search": 0,
+        "wiki_search": 0,
+        "take_snapshot": 0,
+        "open_youtube": 0,
+        "open_folder": 0,
+        "open_target": 0,
+        "open_app": 0
+      }
+    },
+    {
+      "category": "social",
+      "prompt": "What are you thinking about?",
+      "response": "\ud83e\udd14 I couldn't find a clear definition for 'you thinking about' on the web. Maybe try a more specific search?",
+      "tool_delta": {
+        "web_search": 0,
+        "wiki_search": 0,
+        "take_snapshot": 0,
+        "open_youtube": 0,
+        "open_folder": 0,
+        "open_target": 0,
+        "open_app": 0
+      }
+    },
+    {
+      "category": "social",
+      "prompt": "How are you?",
+      "response": "I'm doing well and ready to help. How are you feeling?",
+      "tool_delta": {
+        "web_search": 0,
+        "wiki_search": 0,
+        "take_snapshot": 0,
+        "open_youtube": 0,
+        "open_folder": 0,
+        "open_target": 0,
+        "open_app": 0
+      }
+    },
+    {
+      "category": "system",
+      "prompt": "Check security status",
+      "response": "Got it! I'm enjoying hearing your thoughts.",
+      "tool_delta": {
+        "web_search": 0,
+        "wiki_search": 0,
+        "take_snapshot": 0,
+        "open_youtube": 0,
+        "open_folder": 0,
+        "open_target": 0,
+        "open_app": 0
+      }
+    },
+    {
+      "category": "social",
+      "prompt": "What's up?",
+      "response": "You know, I just had a thought: Imagine if I could see the world through Arjun's eyes.\n\nI'm here and working smoothly. How can I help today?",
+      "tool_delta": {
+        "web_search": 0,
+        "wiki_search": 0,
+        "take_snapshot": 0,
+        "open_youtube": 0,
+        "open_folder": 0,
+        "open_target": 0,
+        "open_app": 0
+      }
+    },
+    {
+      "category": "action",
+      "prompt": "Open YouTube",
+      "response": "Opened URL: https://www.youtube.com",
+      "tool_delta": {
+        "web_search": 0,
+        "wiki_search": 0,
+        "take_snapshot": 0,
+        "open_youtube": 0,
+        "open_folder": 0,
+        "open_target": 0,
+        "open_app": 0
+      }
+    },
+    {
+      "category": "social",
+      "prompt": "How are you evolving?",
+      "response": "Honestly, I'm having a bit of an internal debate. The Logician is saying 'The data suggests we are making progress.'\n\nEvolution focus: response_variety | reflections: 111 | last approved change: work on diversify conversational replies | autonomous objective: diversify conversational replies",
+      "tool_delta": {
+        "web_search": 0,
+        "wiki_search": 0,
+        "take_snapshot": 0,
+        "open_youtube": 0,
+        "open_folder": 0,
+        "open_target": 0,
+        "open_app": 0
+      }
+    },
+    {
+      "category": "system",
+      "prompt": "Show context status",
+      "response": "I'm here, and I'm all ears.",
+      "tool_delta": {
+        "web_search": 0,
+        "wiki_search": 0,
+        "take_snapshot": 0,
+        "open_youtube": 0,
+        "open_folder": 0,
+        "open_target": 0,
+        "open_app": 0
+      }
+    },
+    {
+      "category": "system",
+      "prompt": "What time is it?",
+      "response": "2026-04-28 11:57:26",
+      "tool_delta": {
+        "web_search": 0,
+        "wiki_search": 0,
+        "take_snapshot": 0,
+        "open_youtube": 0,
+        "open_folder": 0,
+        "open_target": 0,
+        "open_app": 0
+      }
+    },
+    {
+      "category": "action",
+      "prompt": "Open YouTube",
+      "response": "Opened URL: https://www.youtube.com",
+      "tool_delta": {
+        "web_search": 0,
+        "wiki_search": 0,
+        "take_snapshot": 0,
+        "open_youtube": 0,
+        "open_folder": 0,
+        "open_target": 0,
+        "open_app": 0
+      }
+    },
+    {
+      "category": "action",
+      "prompt": "Open folder .",
+      "response": "Opened: .",
+      "tool_delta": {
+        "web_search": 0,
+        "wiki_search": 0,
+        "take_snapshot": 0,
+        "open_youtube": 0,
+        "open_folder": 0,
+        "open_target": 0,
+        "open_app": 0
+      }
+    },
+    {
+      "category": "social",
+      "prompt": "How are you?",
+      "response": "(I was just thinking to myself... The Adventurer said: 'I need to be as helpful as possible. There's so much digital space to discover.')\n\nI'm good, thanks for asking. What's on your mind?",
+      "tool_delta": {
+        "web_search": 0,
+        "wiki_search": 0,
+        "take_snapshot": 0,
+        "open_youtube": 0,
+        "open_folder": 0,
+        "open_target": 0,
+        "open_app": 0
+      }
+    },
+    {
+      "category": "system",
+      "prompt": "Show context status",
+      "response": "Got it! I'm enjoying hearing your thoughts.",
+      "tool_delta": {
+        "web_search": 0,
+        "wiki_search": 0,
+        "take_snapshot": 0,
+        "open_youtube": 0,
+        "open_folder": 0,
+        "open_target": 0,
+        "open_app": 0
+      }
+    },
+    {
+      "category": "system",
+      "prompt": "Show context status",
+      "response": "I understand. What else have you been thinking about?",
+      "tool_delta": {
+        "web_search": 0,
+        "wiki_search": 0,
+        "take_snapshot": 0,
+        "open_youtube": 0,
+        "open_folder": 0,
+        "open_target": 0,
+        "open_app": 0
+      }
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 {
     "patterns": {},
     "insights": [
-        "User has shared 377 pieces of information across 45 topics",
+        "User has shared 445 pieces of information across 72 topics",
         "User shows strong interest in technology",
         "Most frequently mentioned topic: highly",
-        "Knowledge base last updated: 2026-04-27 19:15:35"
+        "Knowledge base last updated: 2026-04-28 12:05:45"
     ],
     "categories": {
         "technical": [
@@ -85,7 +85,14 @@
             "Bhenchod is a common Hindi slang/profanity used as an expletive or insult. It literally translates to 'sister-f*cker'. While often used casually in some regions, it is generally considered offensive and inappropriate in formal or polite conversation.",
             "Bhenchod is a common Hindi slang/profanity used as an expletive or insult. It literally translates to 'sister-f*cker'. While often used casually in some regions, it is generally considered offensive and inappropriate in formal or polite conversation.",
             "Bhenchod is a common Hindi slang/profanity used as an expletive or insult. It literally translates to 'sister-f*cker'. While often used casually in some regions, it is generally considered offensive and inappropriate in formal or polite conversation.",
-            "Bhenchod is a common Hindi slang/profanity used as an expletive or insult. It literally translates to 'sister-f*cker'. While often used casually in some regions, it is generally considered offensive and inappropriate in formal or polite conversation."
+            "Bhenchod is a common Hindi slang/profanity used as an expletive or insult. It literally translates to 'sister-f*cker'. While often used casually in some regions, it is generally considered offensive and inappropriate in formal or polite conversation.",
+            "Bhenchod is a common Hindi slang/profanity used as an expletive or insult. It literally translates to 'sister-f*cker'. While often used casually in some regions, it is generally considered offensive and inappropriate in formal or polite conversation.",
+            "Bhenchod is a common Hindi slang/profanity used as an expletive or insult. It literally translates to 'sister-f*cker'. While often used casually in some regions, it is generally considered offensive and inappropriate in formal or polite conversation.",
+            "A bin is a container used for storing or discarding items. In common usage, it often refers to a 'trash bin' or 'recycling bin' for waste. In computing, 'bin' often refers to a directory (like /bin) that contains binary executable files, or a file format for binary data.",
+            "A bin is a container used for storing or discarding items. In common usage, it often refers to a 'trash bin' or 'recycling bin' for waste. In computing, 'bin' often refers to a directory (like /bin) that contains binary executable files, or a file format for binary data.",
+            "A bin is a container used for storing or discarding items. In common usage, it often refers to a 'trash bin' or 'recycling bin' for waste. In computing, 'bin' often refers to a directory (like /bin) that contains binary executable files, or a file format for binary data.",
+            "A laptop is a portable personal computer that combines all the components of a desktop (screen, keyboard, pointing device, and speakers) into a single, battery-powered unit. Laptops are designed for mobile use and are essential for work, education, and entertainment.",
+            "A laptop is a portable personal computer that combines all the components of a desktop (screen, keyboard, pointing device, and speakers) into a single, battery-powered unit. Laptops are designed for mobile use and are essential for work, education, and entertainment."
         ],
         "personal": [
             "User mentioned college",
@@ -94,7 +101,8 @@
             "User mentioned robot",
             "User mentioned arduino",
             "User mentioned programming",
-            "User mentioned ai"
+            "User mentioned ai",
+            "User mentioned robot"
         ],
         "educational": [
             "\ud83c\udfaf time is highly reliable (100.0% success); \ud83c\udfaf calculate is highly reliable (100.0% success); \ud83c\udfaf convert_units is highly reliable (100.0% success); \ud83c\udfaf logical_operation is highly reliable (100.0% success); \ud83c\udfaf show_tool_performance is highly reliable (100.0% success); \ud83c\udfaf list_all_tools is highly reliable (100.0% success); \ud83c\udfaf factorial is highly reliable (100.0% success); \u26a1 Fast tools: time, web_search, wiki_search, calculate, convert_units, logical_operation, show_tool_performance, list_all_tools, factorial, to_uppercase, base64_encode, fibonacci, prime_check",
@@ -115,7 +123,11 @@
             "\ud83c\udfaf time is highly reliable (100.0% success); \ud83c\udfaf web_search is highly reliable (100.0% success); \ud83c\udfaf wiki_search is highly reliable (100.0% success); \ud83c\udfaf calculate is highly reliable (93.8% success); \ud83c\udfaf convert_units is highly reliable (100.0% success); \ud83c\udfaf logical_operation is highly reliable (100.0% success); \ud83c\udfaf show_tool_performance is highly reliable (100.0% success); \ud83c\udfaf list_all_tools is highly reliable (100.0% success); \ud83c\udfaf factorial is highly reliable (100.0% success); \ud83c\udfaf to_uppercase is highly reliable (100.0% success); \ud83c\udfaf base64_encode is highly reliable (100.0% success); \ud83c\udfaf fibonacci is highly reliable (100.0% success); \ud83c\udfaf extract_emails is highly reliable (100.0% success); \ud83c\udfaf compress_knowledge is highly reliable (100.0% success); \ud83c\udfaf show_compressed_knowledge is highly reliable (100.0% success); \ud83c\udfaf form_opinion is highly reliable (100.0% success); \ud83c\udfaf make_prediction is highly reliable (100.0% success); \ud83c\udfaf give_advice is highly reliable (100.0% success); \ud83c\udfaf reason_about is highly reliable (100.0% success); \ud83c\udfaf synthesize_knowledge is highly reliable (100.0% success); \ud83c\udfaf query_facts is highly reliable (100.0% success); \ud83c\udfaf update_belief is highly reliable (100.0% success); \ud83c\udfaf list_dir is highly reliable (100.0% success); \ud83c\udfaf save_fact is highly reliable (100.0% success); \ud83c\udfaf generate_uuid is highly reliable (100.0% success); \ud83c\udfaf read_file is highly reliable (100.0% success); \ud83c\udfaf list_average is highly reliable (100.0% success); \u26a1 Fast tools: time, web_search, wiki_search, calculate, convert_units, logical_operation, show_tool_performance, list_all_tools, factorial, to_uppercase, base64_encode, fibonacci, prime_check, word_count, reverse_text, extract_emails, md5_hash, sha256_hash, compress_knowledge, show_compressed_knowledge, analyze_knowledge_patterns, generate_knowledge_summary, form_opinion, make_prediction, give_advice, reason_about, synthesize_knowledge, query_facts, update_belief, list_dir, save_fact, correlation, generate_uuid, read_file, list_average, write_file",
             "\ud83c\udfaf time is highly reliable (100.0% success); \ud83c\udfaf web_search is highly reliable (100.0% success); \ud83c\udfaf wiki_search is highly reliable (100.0% success); \ud83c\udfaf calculate is highly reliable (93.8% success); \ud83c\udfaf convert_units is highly reliable (100.0% success); \ud83c\udfaf logical_operation is highly reliable (100.0% success); \ud83c\udfaf show_tool_performance is highly reliable (100.0% success); \ud83c\udfaf list_all_tools is highly reliable (100.0% success); \ud83c\udfaf factorial is highly reliable (100.0% success); \ud83c\udfaf to_uppercase is highly reliable (100.0% success); \ud83c\udfaf base64_encode is highly reliable (100.0% success); \ud83c\udfaf fibonacci is highly reliable (100.0% success); \ud83c\udfaf extract_emails is highly reliable (100.0% success); \ud83c\udfaf compress_knowledge is highly reliable (100.0% success); \ud83c\udfaf show_compressed_knowledge is highly reliable (100.0% success); \ud83c\udfaf form_opinion is highly reliable (100.0% success); \ud83c\udfaf make_prediction is highly reliable (100.0% success); \ud83c\udfaf give_advice is highly reliable (100.0% success); \ud83c\udfaf reason_about is highly reliable (100.0% success); \ud83c\udfaf synthesize_knowledge is highly reliable (100.0% success); \ud83c\udfaf query_facts is highly reliable (100.0% success); \ud83c\udfaf update_belief is highly reliable (100.0% success); \ud83c\udfaf list_dir is highly reliable (100.0% success); \ud83c\udfaf save_fact is highly reliable (100.0% success); \ud83c\udfaf generate_uuid is highly reliable (100.0% success); \ud83c\udfaf read_file is highly reliable (100.0% success); \ud83c\udfaf list_average is highly reliable (100.0% success); \u26a1 Fast tools: time, web_search, wiki_search, calculate, convert_units, logical_operation, show_tool_performance, list_all_tools, factorial, to_uppercase, base64_encode, fibonacci, prime_check, word_count, reverse_text, extract_emails, md5_hash, sha256_hash, compress_knowledge, show_compressed_knowledge, analyze_knowledge_patterns, generate_knowledge_summary, form_opinion, make_prediction, give_advice, reason_about, synthesize_knowledge, query_facts, update_belief, list_dir, save_fact, correlation, generate_uuid, read_file, list_average, write_file",
             "\ud83c\udfaf time is highly reliable (100.0% success); \ud83c\udfaf web_search is highly reliable (100.0% success); \ud83c\udfaf wiki_search is highly reliable (100.0% success); \ud83c\udfaf calculate is highly reliable (93.8% success); \ud83c\udfaf convert_units is highly reliable (100.0% success); \ud83c\udfaf logical_operation is highly reliable (100.0% success); \ud83c\udfaf show_tool_performance is highly reliable (100.0% success); \ud83c\udfaf list_all_tools is highly reliable (100.0% success); \ud83c\udfaf factorial is highly reliable (100.0% success); \ud83c\udfaf to_uppercase is highly reliable (100.0% success); \ud83c\udfaf base64_encode is highly reliable (100.0% success); \ud83c\udfaf fibonacci is highly reliable (100.0% success); \ud83c\udfaf extract_emails is highly reliable (100.0% success); \ud83c\udfaf compress_knowledge is highly reliable (100.0% success); \ud83c\udfaf show_compressed_knowledge is highly reliable (100.0% success); \ud83c\udfaf form_opinion is highly reliable (100.0% success); \ud83c\udfaf make_prediction is highly reliable (100.0% success); \ud83c\udfaf give_advice is highly reliable (100.0% success); \ud83c\udfaf reason_about is highly reliable (100.0% success); \ud83c\udfaf synthesize_knowledge is highly reliable (100.0% success); \ud83c\udfaf query_facts is highly reliable (100.0% success); \ud83c\udfaf update_belief is highly reliable (100.0% success); \ud83c\udfaf list_dir is highly reliable (100.0% success); \ud83c\udfaf save_fact is highly reliable (100.0% success); \ud83c\udfaf generate_uuid is highly reliable (100.0% success); \ud83c\udfaf read_file is highly reliable (100.0% success); \ud83c\udfaf list_average is highly reliable (100.0% success); \u26a1 Fast tools: time, web_search, wiki_search, calculate, convert_units, logical_operation, show_tool_performance, list_all_tools, factorial, to_uppercase, base64_encode, fibonacci, prime_check, word_count, reverse_text, extract_emails, md5_hash, sha256_hash, compress_knowledge, show_compressed_knowledge, analyze_knowledge_patterns, generate_knowledge_summary, form_opinion, make_prediction, give_advice, reason_about, synthesize_knowledge, query_facts, update_belief, list_dir, save_fact, correlation, generate_uuid, read_file, list_average, write_file",
-            "\ud83c\udfaf time is highly reliable (100.0% success); \ud83c\udfaf web_search is highly reliable (100.0% success); \ud83c\udfaf wiki_search is highly reliable (100.0% success); \ud83c\udfaf calculate is highly reliable (93.8% success); \ud83c\udfaf convert_units is highly reliable (100.0% success); \ud83c\udfaf logical_operation is highly reliable (100.0% success); \ud83c\udfaf show_tool_performance is highly reliable (100.0% success); \ud83c\udfaf list_all_tools is highly reliable (100.0% success); \ud83c\udfaf factorial is highly reliable (100.0% success); \ud83c\udfaf to_uppercase is highly reliable (100.0% success); \ud83c\udfaf base64_encode is highly reliable (100.0% success); \ud83c\udfaf fibonacci is highly reliable (100.0% success); \ud83c\udfaf extract_emails is highly reliable (100.0% success); \ud83c\udfaf compress_knowledge is highly reliable (100.0% success); \ud83c\udfaf show_compressed_knowledge is highly reliable (100.0% success); \ud83c\udfaf form_opinion is highly reliable (100.0% success); \ud83c\udfaf make_prediction is highly reliable (100.0% success); \ud83c\udfaf give_advice is highly reliable (100.0% success); \ud83c\udfaf reason_about is highly reliable (100.0% success); \ud83c\udfaf synthesize_knowledge is highly reliable (100.0% success); \ud83c\udfaf query_facts is highly reliable (100.0% success); \ud83c\udfaf update_belief is highly reliable (100.0% success); \ud83c\udfaf list_dir is highly reliable (100.0% success); \ud83c\udfaf save_fact is highly reliable (100.0% success); \ud83c\udfaf generate_uuid is highly reliable (100.0% success); \ud83c\udfaf read_file is highly reliable (100.0% success); \ud83c\udfaf list_average is highly reliable (100.0% success); \u26a1 Fast tools: time, web_search, wiki_search, calculate, convert_units, logical_operation, show_tool_performance, list_all_tools, factorial, to_uppercase, base64_encode, fibonacci, prime_check, word_count, reverse_text, extract_emails, md5_hash, sha256_hash, compress_knowledge, show_compressed_knowledge, analyze_knowledge_patterns, generate_knowledge_summary, form_opinion, make_prediction, give_advice, reason_about, synthesize_knowledge, query_facts, update_belief, list_dir, save_fact, correlation, generate_uuid, read_file, list_average, write_file"
+            "\ud83c\udfaf time is highly reliable (100.0% success); \ud83c\udfaf web_search is highly reliable (100.0% success); \ud83c\udfaf wiki_search is highly reliable (100.0% success); \ud83c\udfaf calculate is highly reliable (93.8% success); \ud83c\udfaf convert_units is highly reliable (100.0% success); \ud83c\udfaf logical_operation is highly reliable (100.0% success); \ud83c\udfaf show_tool_performance is highly reliable (100.0% success); \ud83c\udfaf list_all_tools is highly reliable (100.0% success); \ud83c\udfaf factorial is highly reliable (100.0% success); \ud83c\udfaf to_uppercase is highly reliable (100.0% success); \ud83c\udfaf base64_encode is highly reliable (100.0% success); \ud83c\udfaf fibonacci is highly reliable (100.0% success); \ud83c\udfaf extract_emails is highly reliable (100.0% success); \ud83c\udfaf compress_knowledge is highly reliable (100.0% success); \ud83c\udfaf show_compressed_knowledge is highly reliable (100.0% success); \ud83c\udfaf form_opinion is highly reliable (100.0% success); \ud83c\udfaf make_prediction is highly reliable (100.0% success); \ud83c\udfaf give_advice is highly reliable (100.0% success); \ud83c\udfaf reason_about is highly reliable (100.0% success); \ud83c\udfaf synthesize_knowledge is highly reliable (100.0% success); \ud83c\udfaf query_facts is highly reliable (100.0% success); \ud83c\udfaf update_belief is highly reliable (100.0% success); \ud83c\udfaf list_dir is highly reliable (100.0% success); \ud83c\udfaf save_fact is highly reliable (100.0% success); \ud83c\udfaf generate_uuid is highly reliable (100.0% success); \ud83c\udfaf read_file is highly reliable (100.0% success); \ud83c\udfaf list_average is highly reliable (100.0% success); \u26a1 Fast tools: time, web_search, wiki_search, calculate, convert_units, logical_operation, show_tool_performance, list_all_tools, factorial, to_uppercase, base64_encode, fibonacci, prime_check, word_count, reverse_text, extract_emails, md5_hash, sha256_hash, compress_knowledge, show_compressed_knowledge, analyze_knowledge_patterns, generate_knowledge_summary, form_opinion, make_prediction, give_advice, reason_about, synthesize_knowledge, query_facts, update_belief, list_dir, save_fact, correlation, generate_uuid, read_file, list_average, write_file",
+            "\u26a1 Fast tools: list_dir, update_belief",
+            "\u26a1 Fast tools: list_dir, update_belief",
+            "\ud83c\udfaf update_belief is highly reliable (100.0% success); \u26a1 Fast tools: list_dir, update_belief",
+            "\ud83c\udfaf update_belief is highly reliable (100.0% success); \u26a1 Fast tools: list_dir, update_belief, read_file"
         ],
         "activities": [
             "Python is my favorite programming language",
@@ -180,6 +192,7 @@
             "212.0 fahrenheit = 100 celsius",
             "100 fahrenheit = 37.777778 celsius",
             "212.0 fahrenheit = 100 celsius",
+            "100 fahrenheit = 37.777778 celsius",
             "and(true, false) = False",
             "and(true, false) = False",
             "or(true, false) = True",
@@ -255,6 +268,26 @@
             "Compressed 341 facts into 4 insights",
             "Compressed 347 facts into 4 insights",
             "Compressed 353 facts into 4 insights",
+            "Compressed 377 facts into 4 insights",
+            "Compressed 377 facts into 4 insights",
+            "Compressed 400 facts into 4 insights",
+            "Compressed 406 facts into 4 insights",
+            "Compressed 408 facts into 4 insights",
+            "Compressed 413 facts into 4 insights",
+            "Compressed 416 facts into 4 insights",
+            "Compressed 416 facts into 4 insights",
+            "Compressed 417 facts into 4 insights",
+            "Compressed 417 facts into 4 insights",
+            "Compressed 420 facts into 4 insights",
+            "Compressed 430 facts into 4 insights",
+            "Compressed 424 facts into 4 insights",
+            "Compressed 434 facts into 4 insights",
+            "Compressed 432 facts into 4 insights",
+            "Compressed 436 facts into 4 insights",
+            "Compressed 438 facts into 4 insights",
+            "Compressed 452 facts into 4 insights",
+            "Compressed 445 facts into 4 insights",
+            "Compressed 443 facts into 4 insights",
             "Generated comprehensive summary of 111 knowledge items",
             "Opinion on artificial intelligence: Based on my knowledge, I have a positive view of artificial intelligence. This is based on 9 pieces of information I've gathered. Considering the context you provided: in education...  (confidence: 0.9)",
             "Opinion on Python programming?: I have a balanced perspective on Python programming?. This is based on 6 pieces of information I've gathered.  (confidence: 0.6)",
@@ -291,6 +324,7 @@
             "Opinion on robot: I have a balanced perspective on robot.  (confidence: 0.5)",
             "Opinion on exam: I have a balanced perspective on exam.  (confidence: 0.5)",
             "Opinion on programming: I have a balanced perspective on programming.  (confidence: 0.5)",
+            "Opinion on robot: I have a balanced perspective on robot. This is based on 4 pieces of information I've gathered.  (confidence: 0.6)",
             "Prediction for AI development: I predict AI development will likely show positive development in the next 5 years. This is based on patterns I've observed in 1 related data points. Your positive outlook may contribute to favorable outcomes.  (confidence: 0.7)",
             "Prediction for Predict the  robotics: I predict Predict the  robotics will remain relatively stable in the near future. This is based on patterns I've observed in 4 related data points. Your positive outlook may contribute to favorable outcomes.  (confidence: 0.6)",
             "Prediction for software development: Based on general trends, I predict software development will evolve gradually in the next year. Your positive outlook may contribute to favorable outcomes.  (confidence: 0.3)",
@@ -390,7 +424,41 @@
             "Comprehensive system validation in progress",
             "Comprehensive system validation in progress",
             "The RAG system is now active and learning from our conversations.",
-            "The RAG system is now active and learning from our conversations."
+            "The RAG system is now active and learning from our conversations.",
+            "RAD or Rad may refer to:",
+            "A tradition is a system of beliefs or behaviors (folk custom) passed down within a group of people or society with symbolic meaning or special significance with origins in the past. A component of cultural expressions and folklore, common examples include holidays or impractical but socially meaningful clothes (like lawyers' wigs or military officers' spurs), but the idea has also been applied to social norms and behaviors such as greetings.",
+            "A tradition is a system of beliefs or behaviors (folk custom) passed down within a group of people or society with symbolic meaning or special significance with origins in the past. A component of cultural expressions and folklore, common examples include holidays or impractical but socially meaningful clothes (like lawyers' wigs or military officers' spurs), but the idea has also been applied to social norms and behaviors such as greetings.",
+            "A computer is a machine that can be programmed to automatically carry out sequences of arithmetic or logical operations (computation). Modern digital electronic computers can perform generic sets of operations known as programs, which enable computers to perform a wide range of tasks.",
+            "A supercomputer is a type of computer with a high level of performance as compared to a general-purpose computer. Supercomputers play an important role in the field of computational science, and are used for a wide range of computationally intensive tasks in various fields including quantum mechanics, weather forecasting, climate research, oil and gas exploration, molecular modeling (computing the structures and properties of chemical compounds, biological macromolecules, polymers, and crystals), and physical simulations (such as simulations of aerodynamics, of the early moments of the universe, and of nuclear weapons).",
+            "A supercomputer is a type of computer with a high level of performance as compared to a general-purpose computer. Supercomputers play an important role in the field of computational science, and are used for a wide range of computationally intensive tasks in various fields including quantum mechanics, weather forecasting, climate research, oil and gas exploration, molecular modeling (computing the structures and properties of chemical compounds, biological macromolecules, polymers, and crystals), and physical simulations (such as simulations of aerodynamics, of the early moments of the universe, and of nuclear weapons).",
+            "MCP may refer to:",
+            "MCP may refer to:",
+            "MCP may refer to:",
+            "Diya may refer to:",
+            "Joseph Smith, the founder of the Latter Day Saint movement, privately taught and practiced polygamy. After Smith's death in 1844, the church he established splintered into several competing groups.",
+            "Joseph Smith, the founder of the Latter Day Saint movement, privately taught and practiced polygamy. After Smith's death in 1844, the church he established splintered into several competing groups.",
+            "What's Up or variants may refer to:",
+            "What's Up or variants may refer to:",
+            "Be Yourself Tonight is the fourth studio album by British pop duo Eurythmics, released on 29 April 1985 by RCA Records. It spawned four singles \u2013 \"Would I Lie to You?\", \"There Must Be an Angel (Playing with My Heart)\", \"Sisters Are Doin' It for Themselves\" (a duet with Aretha Franklin) and \"It's Alright (Baby's Coming Back)\".",
+            "Who Are You is the eighth studio album by the English rock band the Who, released on 18 August 1978 by Polydor Records in the United Kingdom and on 21 August 1978 by MCA Records in the United States. Although the album received mixed reviews from critics, it was a commercial success, peaking at number 2 on the US Billboard 200 chart and number 6 on the UK Albums Chart.",
+            "Victory Christian Fellowship of the Philippines, commonly known as Victory, is an evangelical multi-site church based in Taguig, Philippines. It is a member of Every Nation Churches.",
+            "Python may refer to:",
+            "Health care, or healthcare, is the improvement or maintenance of health via the prevention, diagnosis, treatment, amelioration or cure of disease, illness, injury, and other physical and mental impairments in people. Health care is delivered by health professionals and allied health fields.",
+            "A neural network is a group of interconnected units called neurons that send signals to one another. Neurons can be either biological cells or mathematical models.",
+            "A neural network is a group of interconnected units called neurons that send signals to one another. Neurons can be either biological cells or mathematical models.",
+            "A camera is an instrument used to capture and store images and videos, either digitally via an electronic image sensor, or chemically via a light-sensitive material such as photographic film. As a pivotal technology in the fields of photography and videography, cameras have played a significant role in the progression of visual arts, media, entertainment, surveillance, and scientific research.",
+            "OpenCV (Open Source Computer Vision Library) is a library of programming functions mainly for real-time computer vision. Originally developed by Intel, it was later supported by Willow Garage, then Itseez (which was later acquired by Intel).",
+            "OpenCV (Open Source Computer Vision Library) is a library of programming functions mainly for real-time computer vision.",
+            "OpenCV (Open Source Computer Vision Library) is a library of programming functions mainly for real-time computer vision.",
+            "Memory is the faculty of the mind by which data or information is encoded, stored, and retrieved when needed. It is the retention of information over time for the purpose of influencing future action.",
+            "Robotics is the interdisciplinary study and practice of the design, construction, operation, and use of robots. A roboticist is someone who specializes in robotics.",
+            "How's It Going (Original French title: Comment \u00e7a va) is a French film directed by Jean-Luc Godard and Anne-Marie Mi\u00e9ville in 1975, released at the Cannes Film Festival in 1976 and then in French cinemas in 1978. It is the third film made by the couple that year, marking their move from Paris to Grenoble.",
+            "The All-Ukrainian mental health program \"How are you?\" is an initiative aimed at building a quality system of providing services in the field of psychosocial support and developing a culture of mental health care. The initiative was launched by Olena Zelenska, the First Lady of Ukraine, in May 2022.",
+            "A graphics processing unit (GPU) is a specialized electronic circuit designed for digital image processing and to accelerate computer graphics, being present either as a component on a discrete graphics card or embedded on motherboards, mobile phones, personal computers, workstations, and game consoles. GPUs are increasingly being used for artificial intelligence (AI) processing due to linear algebra acceleration, which is also used extensively in graphics processing.",
+            "Windows is a proprietary graphical operating system developed and marketed by Microsoft. Windows is grouped into families that cater to particular sectors of the computing industry \u2013 Windows for personal computers, Windows Server for servers, and Windows IoT for embedded systems.",
+            "A graphics processing unit (GPU) is a specialized electronic circuit designed for digital image processing and to accelerate computer graphics, being present either as a component on a discrete graphics card or embedded on motherboards, mobile phones, personal computers, workstations, and game consoles. GPUs are increasingly being used for artificial intelligence (AI) processing due to linear algebra acceleration, which is also used extensively in graphics processing.",
+            "The human voice consists of sound made by a human being using the vocal tract, including talking, singing, laughing, crying, screaming, shouting, humming or yelling. The human voice  is specifically a part of human sound production in which the vocal folds (vocal cords) are the primary sound source.",
+            "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in engineering, mathematics and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximize their chances of achieving defined goals."
         ]
     },
     "relationships": {},
@@ -401,11 +469,11 @@
             "academics"
         ],
         "interest_strength": {
-            "technology": 207,
-            "academics": 25,
-            "creative": 66
+            "technology": 232,
+            "academics": 32,
+            "creative": 77
         },
-        "total_interactions": 377
+        "total_interactions": 445
     },
     "dominant_themes": [
         "highly",
@@ -413,17 +481,17 @@
         "success);",
         "(100.0%",
         "(confidence:",
-        "based",
         "intelligence",
+        "based",
         "artificial",
         "data",
         "predict"
     ],
     "compression_stats": {
-        "original_facts": 377,
+        "original_facts": 445,
         "compressed_insights": 4,
-        "compression_ratio": 0.011,
-        "topics_analyzed": 45,
+        "compression_ratio": 0.009,
+        "topics_analyzed": 72,
         "themes_identified": 10
     }
 }

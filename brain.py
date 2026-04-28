@@ -35,7 +35,11 @@ def load_memory():
     except FileNotFoundError:
         memory = {}
 
-    memory.setdefault("identity", {"real_name": None, "preferred_name": None})
+    memory.setdefault("identity", {
+        "real_name": None,
+        "preferred_name": None,
+        "avatar_path": "img/baymax-avatar.png",
+    })
     memory.setdefault("profile", {"college": None, "field": None, "location": None})
     memory.setdefault("state", {
         "awaiting_preferred_name": True,
@@ -159,10 +163,34 @@ def extract_real_name(text):
 
 def detect_tool_intent(text, memory=None):
     t = text.lower()
+
+    # Guard: social small-talk should never be treated as a follow-up search.
+    t_clean = re.sub(r"[^a-z0-9\s']", " ", t).strip()
+    social_smalltalk = {
+        "hi",
+        "hello",
+        "hey",
+        "sup",
+        "whats up",
+        "what's up",
+        "how are you",
+        "how are u",
+        "how r u",
+        "hows it going",
+        "how's it going",
+    }
+    if t_clean in social_smalltalk:
+        return (None, None)
     
     # Check for follow-up search requests like "find the answer" or "search it"
     if any(p in t for p in ["find the answer", "search it", "look it up", "find in internet", "search in internet", "then find", "find in google"]) or \
-       (memory and memory.get("episodes") and len(t.split()) <= 4 and any(p in memory["episodes"][-1]["text"].lower() for p in ["what is", "who is", "define", "meaning of", "full form of", "search for"])):
+       (
+           memory
+           and memory.get("episodes")
+           and len(t.split()) <= 4
+           and t_clean not in social_smalltalk
+           and any(p in memory["episodes"][-1]["text"].lower() for p in ["what is", "who is", "define", "meaning of", "full form of", "search for"])
+       ):
         
         query = t
         # Patterns to remove to get the clean query
@@ -1546,6 +1574,54 @@ def plan_response(memory, t):
             opinion = consciousness_engine.get_personal_opinion(memory, topic)
             return opinion
 
+    # Self, memory, and internal system status checks should answer locally.
+    if any(p in t for p in [
+        "what do you remember about me",
+        "what do you remember",
+        "remember about me",
+        "memory status",
+        "show your consciousness status",
+        "consciousness status",
+        "what is your rag system doing",
+        "rag system",
+        "what are your personality modes",
+        "personality modes",
+        "what are your agent thoughts",
+        "agent thoughts",
+        "what facts have you learned",
+        "what knowledge do you have",
+        "knowledge status",
+        "what is your current state",
+        "current state",
+    ]):
+        identity = memory.get("identity", {})
+        emotion = memory.get("emotion", {})
+        lc = memory.get("life_cycle", {})
+        consciousness = memory.get("consciousness", {})
+        context = memory.get("context", {})
+        preferred_name = identity.get("preferred_name") or "friend"
+        open_topics = memory.get("curiosity", {}).get("open_topics", [])
+        recent_thoughts = memory.get("thoughts", [])[-3:]
+        recent_episodes = memory.get("episodes", [])[-2:]
+        mode = memory.get("personality_mode", {}).get("current", "friend")
+        response_parts = [
+            f"I remember you as {preferred_name}.",
+            f"Current mood: {emotion.get('user_mood', 'neutral')}; state: {lc.get('current_state', get_current_state())}.",
+            f"Current personality mode: {mode}.",
+            f"Consciousness awareness: {int(float(consciousness.get('awareness_level', 0.5)) * 100)}%.",
+        ]
+        if open_topics:
+            response_parts.append(f"Open topics: {', '.join(open_topics[:3])}.")
+        if recent_thoughts:
+            last_thought = recent_thoughts[-1]
+            response_parts.append(f"Recent thought: {last_thought.get('thought', str(last_thought))}.")
+        if recent_episodes:
+            last_episode = recent_episodes[-1]
+            response_parts.append(f"Recent episode: {last_episode.get('text', last_episode)}.")
+        response_parts.append(f"Context: mood={context.get('current_mood', 'neutral')}, task={context.get('current_task', 'general')}.")
+        response_parts.append("My RAG, memory, and personality systems are active and connected.")
+        return " ".join(response_parts)
+
     # 1. High-Priority Intent Detection (News, Facts, etc.)
     # News/facts check
     news_patterns = [r"\bnews\b", r"\bheadline", r"happening in the world", r"happening now", r"latest", r"current events"]
@@ -1578,6 +1654,31 @@ def plan_response(memory, t):
         objective = choose_autonomous_objective(memory)
         return f"{summary} | autonomous objective: {objective['name']}"
 
+    # Social conversation should stay local, not go through search.
+    social_prompts = [
+        "how are you",
+        "how are u",
+        "how r u",
+        "hows it going",
+        "how's it going",
+        "what's up",
+        "whats up",
+        "sup",
+        "hello",
+        "hi",
+        "hey",
+    ]
+    if any(phrase in t for phrase in social_prompts):
+        prefix = ""
+        if state == "waking_up":
+            prefix = random.choice(["*yawns* ", "Mmm... just woke up, still a bit slow 😅 ", "*stretches* "])
+        return prefix + random.choice([
+            "I'm doing well and ready to help. How are you feeling?",
+            "I'm good, thanks for asking. What's on your mind?",
+            "I'm here and working smoothly. How can I help today?",
+            "Doing fine on my side. Tell me what you want to explore.",
+        ])
+
     if any(phrase in t for phrase in ["today plan", "today's plan", "todays plan", "plan for today", "do you have any plan today", "whats todays plan", "what's today's plan"]):
         objective = choose_autonomous_objective(memory)
         return (
@@ -1585,6 +1686,38 @@ def plan_response(memory, t):
             f"Reason: {objective['reason']}. "
             f"Next step: {objective['action']}."
         )
+
+    # Direct OS/browser actions
+    if any(phrase in t for phrase in ["open youtube", "launch youtube", "start youtube"]):
+        try:
+            from tool_registry import run_tool
+            query = t.replace("open youtube", "").replace("launch youtube", "").replace("start youtube", "").strip()
+            return run_tool("open_youtube", query=query)
+        except Exception:
+            return "I couldn't open YouTube right now."
+
+    if any(phrase in t for phrase in ["open folder", "open my folder", "show folder", "launch folder"]):
+        try:
+            from tool_registry import run_tool
+            folder = t.split("folder", 1)[-1].strip() or "."
+            return run_tool("open_folder", path=folder)
+        except Exception:
+            return "I couldn't open that folder right now."
+
+    if any(phrase in t for phrase in ["open app", "launch app", "start app"]):
+        try:
+            from tool_registry import run_tool
+            app_target = t.split("app", 1)[-1].strip()
+            return run_tool("open_app", app_path_or_name=app_target)
+        except Exception:
+            return "I couldn't open that app right now."
+
+    if any(phrase in t for phrase in ["open camera", "camera app", "show camera"]) or ("camera" in t and any(word in t for word in ["open", "launch", "start", "show"])):
+        try:
+            from tool_registry import run_tool
+            return run_tool("open_target", target="microsoft.windows.camera:")
+        except Exception:
+            return "I couldn't open the camera app right now."
 
     has_voice_issue = (
         "voice" in t and any(token in t for token in ["not", "no", "still", "coming", "working", "hear", "problem"])
@@ -1606,22 +1739,6 @@ def plan_response(memory, t):
             "If needed, restart with 'python main.py --voice-chat'."
         )
 
-    casual_greetings = [
-        "how are you",
-        "how are you now",
-        "how are u",
-        "how r u",
-        "hows it going",
-        "how's it going",
-    ]
-    if any(phrase in t for phrase in casual_greetings) or t.strip() in ["how r u", "how r", "sup"]:
-        return random.choice([
-            "I'm doing well, thank you! What about you?",
-            "I'm good and fully here with you. How are you feeling?",
-            "Doing great. Want to chat or work on something specific?",
-            "I'm well. Tell me how your day is going.",
-        ])
-    
     # Incomplete search query check
     if any(t.strip() == p for p in ["full form of", "meaning of", "what is", "who is", "define", "explain", "tell me about"]):
         return f"I'm listening. {t.strip().title()} what exactly? Tell me the topic you're interested in."
@@ -1632,6 +1749,26 @@ def plan_response(memory, t):
         for starter in ["what is", "how to", "why is", "who is", "when is", "where is", "tell me"]:
             if query.startswith(starter):
                 query = query[len(starter):].strip()
+        special_local_queries = [
+            "remember about me",
+            "what do you remember",
+            "personality modes",
+            "rag system",
+            "agent thoughts",
+            "current state",
+            "consciousness status",
+            "memory status",
+            "knowledge status",
+        ]
+        if any(item in query for item in special_local_queries):
+            identity = memory.get("identity", {})
+            mode = memory.get("personality_mode", {}).get("current", "friend")
+            awareness = int(float(memory.get("consciousness", {}).get("awareness_level", 0.5)) * 100)
+            return (
+                f"I remember you as {identity.get('preferred_name') or 'friend'}. "
+                f"Current mode: {mode}. Consciousness awareness: {awareness}%. "
+                f"My RAG, memory, and agent-thought systems are active."
+            )
         generic_queries = {"something", "anything", "more", "stuff", "this", "that", "it", "one thing"}
         if len(query) >= 2 and query not in generic_queries:
             try:
@@ -1800,6 +1937,30 @@ def think(user_input):
     # List modes command
     if lower in ["modes", "list modes", "show modes", "personality modes"]:
         return list_modes()
+
+    # Self / memory / internal-system queries should stay local here too.
+    if any(phrase in lower for phrase in [
+        "what do you remember about me",
+        "what do you remember",
+        "remember about me",
+        "rag system",
+        "agent thoughts",
+        "personality modes",
+        "memory status",
+        "consciousness status",
+        "knowledge status",
+        "current state",
+    ]):
+        identity = memory.get("identity", {})
+        mode = memory.get("personality_mode", {}).get("current", "friend")
+        awareness = int(float(memory.get("consciousness", {}).get("awareness_level", 0.5)) * 100)
+        open_topics = memory.get("curiosity", {}).get("open_topics", [])
+        return (
+            f"I remember you as {identity.get('preferred_name') or 'friend'}. "
+            f"Current mode: {mode}. Consciousness awareness: {awareness}%. "
+            f"Open topics: {', '.join(open_topics[:3]) if open_topics else 'none yet'}. "
+            f"My RAG, memory, and agent-thought systems are active."
+        )
 
     # Show context command
     if lower in ["context", "show context", "status", "autonomy status", "self status", "evolution status"]:

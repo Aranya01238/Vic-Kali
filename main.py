@@ -11,6 +11,8 @@ Usage: python main.py
 
 import sys
 import time
+import atexit
+import threading
 from datetime import datetime
 
 from brain import think, load_memory, save_memory
@@ -36,6 +38,279 @@ from voice_system import (
 
 # ================= SAFE PRINT =================
 
+_brain_avatar_label = ""
+_brain_avatar_window = None
+_brain_avatar_controller = None
+
+
+def _set_brain_avatar_label(memory):
+    """Cache the brain's avatar identity for speech output."""
+    global _brain_avatar_label
+    avatar_path = memory.get("identity", {}).get("avatar_path", "")
+    _brain_avatar_label = f"[brain face: {avatar_path}]" if avatar_path else ""
+
+
+def _set_brain_avatar_controller(controller):
+    """Cache the active avatar controller for lip-sync/blink cues."""
+    global _brain_avatar_controller
+    _brain_avatar_controller = controller
+
+
+def _avatar_supports_motion():
+    return _brain_avatar_controller is not None and hasattr(_brain_avatar_controller, "set_lipsync")
+
+
+def _avatar_mouth_level(message):
+    words = max(1, len((message or "").split()))
+    level = 0.18 + min(0.82, words / 18.0)
+    return max(0.12, min(1.0, level))
+
+
+def _avatar_set_mouth(level):
+    if not _avatar_supports_motion():
+        return
+    try:
+        _brain_avatar_controller.set_lipsync(max(0.0, min(1.0, float(level))))
+    except Exception:
+        pass
+
+
+def _avatar_blink():
+    if not _avatar_supports_motion():
+        return
+    try:
+        _brain_avatar_controller.blink()
+    except Exception:
+        pass
+
+
+def speak_with_avatar(message, speak_fn, blocking=False):
+    """Speak and drive avatar mouth motion while the message is spoken."""
+    import threading as _threading
+
+    if _avatar_supports_motion():
+        _avatar_set_mouth(_avatar_mouth_level(message))
+
+    ok = speak_fn(message)
+
+    if _avatar_supports_motion():
+        duration = max(0.8, min(4.0, len(message or "") / 12.0))
+        if blocking:
+            _avatar_set_mouth(0.0)
+            _avatar_blink()
+        else:
+            def _reset():
+                _avatar_set_mouth(0.0)
+                _avatar_blink()
+
+            _threading.Timer(duration, _reset).start()
+
+    return ok
+
+
+class BrainAvatarWindow:
+    """Tiny always-on-top avatar window for Diya."""
+
+    def __init__(self, avatar_path, title="Diya"):
+        self.avatar_path = avatar_path
+        self.title = title
+        self._thread = None
+        self._root = None
+        self._stop_requested = threading.Event()
+        self._ready = threading.Event()
+
+    def _scale_photo(self, image, max_size=220):
+        """Shrink a Tk photo image to fit within a square viewport."""
+        width = max(1, int(image.width()))
+        height = max(1, int(image.height()))
+        scale = max(1, (max(width, height) + max_size - 1) // max_size)
+        if scale <= 1:
+            return image
+        return image.subsample(scale, scale)
+
+    def start(self):
+        if self._thread:
+            return self
+
+        self._thread = threading.Thread(target=self._run, daemon=True, name="BrainAvatarWindow")
+        self._thread.start()
+        self._ready.wait(timeout=3)
+        return self
+
+    def _run(self):
+        try:
+            import tkinter as tk
+        except Exception:
+            self._ready.set()
+            return
+
+        try:
+            root = tk.Tk()
+            self._root = root
+            root.title(self.title)
+            root.configure(bg="#0f0f12")
+            root.geometry("320x380+40+40")
+            root.resizable(False, False)
+            try:
+                root.attributes("-topmost", True)
+            except Exception:
+                pass
+
+            canvas = tk.Canvas(
+                root,
+                width=280,
+                height=300,
+                bg="#0f0f12",
+                highlightthickness=0,
+                bd=0,
+            )
+            canvas.pack(padx=16, pady=16)
+
+            # Build a layered, pseudo-3D avatar using canvas primitives so we can
+            # animate breathing, head-tilt and blinking without extra deps.
+            face_center = (140, 140)
+            face_radius = 105
+
+            # Create layered concentric ovals for soft shading
+            layers = []
+            for i, color in enumerate(["#1b1c21", "#2a2b32", "#3b3c44"]):
+                r = face_radius + (6 - i * 3)
+                layers.append(canvas.create_oval(
+                    face_center[0]-r, face_center[1]-r,
+                    face_center[0]+r, face_center[1]+r,
+                    fill=color, outline="", tags=("layer",)
+                ))
+
+            # Face core (lit)
+            face_core = canvas.create_oval(
+                face_center[0]-face_radius+12, face_center[1]-face_radius+12,
+                face_center[0]+face_radius-12, face_center[1]+face_radius-12,
+                fill="#fbfbfb", outline="", tags=("face_core",)
+            )
+
+            # Inner highlight (gives round volumetric look)
+            highlight = canvas.create_oval(
+                face_center[0]-face_radius+34, face_center[1]-face_radius+20,
+                face_center[0]+face_radius-34, face_center[1]+face_radius-28,
+                fill="#ffffff", outline="", stipple="gray12", tags=("highlight",)
+            )
+
+            # Eye placeholders (we animate positions / blink)
+            eye_radius = 8
+            left_eye = canvas.create_oval(0,0,0,0, fill="#0d0d0d", outline="")
+            right_eye = canvas.create_oval(0,0,0,0, fill="#0d0d0d", outline="")
+            connector = canvas.create_line(0,0,0,0, fill="#0d0d0d", width=6, capstyle=tk.ROUND)
+
+            # Status text and indicators
+            canvas.create_text(140, 286, text="Baymax face = brain face", fill="#d7dae3", font=("Segoe UI", 10))
+            canvas.create_oval(114, 268, 166, 292, fill="#0f0f12", outline="")
+            canvas.create_oval(123, 277, 132, 286, fill="#79ffb3", outline="")
+            canvas.create_text(165, 280, text="live", fill="#9da6b7", font=("Segoe UI", 8))
+
+            # Animation state
+            import math
+            start_t = time.time()
+            blink_state = {"closing": False, "pct": 0.0, "last_blink": start_t}
+
+            def _update_avatar():
+                t = time.time() - start_t
+                # breathing: slow scale factor
+                breath = 1.0 + 0.02 * math.sin(t * 1.5)
+                # head tilt: small x offset
+                tilt = 6 * math.sin(t * 0.6)
+
+                # compute current face bbox
+                r = int(face_radius * breath)
+                cx = face_center[0] + int(tilt)
+                cy = face_center[1]
+
+                # update layered shading positions
+                for idx, item in enumerate(layers):
+                    offset = idx * 3
+                    rr = r + (6 - idx * 3)
+                    canvas.coords(item, cx-rr, cy-rr, cx+rr, cy+rr)
+
+                canvas.coords(face_core, cx-r+12, cy-r+12, cx+r-12, cy+r-12)
+                canvas.coords(highlight, cx-r+34, cy-r+20, cx+r-34, cy+r-28)
+
+                # eyes move subtly with tilt and breathing
+                eye_dx = int(18 * breath + tilt * 0.6)
+                eye_dy = int(-6 * (breath - 1))
+                left_cx = cx - eye_dx
+                right_cx = cx + eye_dx
+                eye_cy = cy + eye_dy
+
+                # blinking: trigger every ~3-6s
+                now = time.time()
+                if now - blink_state["last_blink"] > 3.0 + (math.sin(t) + 1) * 1.5:
+                    blink_state["last_blink"] = now
+                    blink_state["closing"] = True
+
+                # animate blink percentage
+                if blink_state["closing"]:
+                    blink_state["pct"] += 0.18
+                    if blink_state["pct"] >= 1.0:
+                        blink_state["pct"] = 1.0
+                        blink_state["closing"] = False
+                else:
+                    if blink_state["pct"] > 0:
+                        blink_state["pct"] -= 0.12
+                        if blink_state["pct"] < 0:
+                            blink_state["pct"] = 0
+
+                blink = blink_state["pct"]
+
+                # eye geometry depends on blink
+                def eye_coords(cx_e, cy_e, r_e, closed_pct):
+                    if closed_pct <= 0:
+                        return (cx_e-r_e, cy_e-r_e, cx_e+r_e, cy_e+r_e)
+                    # when closed, shrink height
+                    h = max(1, int(r_e * (1 - closed_pct * 0.98)))
+                    return (cx_e-r_e, cy_e-h, cx_e+r_e, cy_e+h)
+
+                canvas.coords(left_eye, *eye_coords(left_cx, eye_cy, eye_radius, blink))
+                canvas.coords(right_eye, *eye_coords(right_cx, eye_cy, eye_radius, blink))
+                canvas.coords(connector, left_cx+6, eye_cy, right_cx-6, eye_cy)
+
+                # subtle connector width变化 (thicken slightly on inhale)
+                canvas.itemconfig(connector, width=max(4, int(6 * (1 + 0.2 * (breath-1)))))
+
+                if not self._stop_requested.is_set():
+                    root.after(50, _update_avatar)
+
+            # kick off animation loop
+            root.after(100, _update_avatar)
+
+            root.protocol("WM_DELETE_WINDOW", self.stop)
+            self._ready.set()
+
+            def _poll_stop():
+                if self._stop_requested.is_set():
+                    try:
+                        root.destroy()
+                    except Exception:
+                        pass
+                    return
+                root.after(150, _poll_stop)
+
+            root.after(150, _poll_stop)
+            root.mainloop()
+        except Exception:
+            self._ready.set()
+            return
+
+    def stop(self):
+        self._stop_requested.set()
+        root = self._root
+        if root is not None:
+            try:
+                root.after(0, root.destroy)
+            except Exception:
+                try:
+                    root.destroy()
+                except Exception:
+                    pass
+
 def safe_print(message):
     """Print safely on Windows terminals."""
     try:
@@ -47,7 +322,37 @@ def safe_print(message):
 def diya_print(message):
     """Print a message from Diya with timestamp."""
     timestamp = datetime.now().strftime("%H:%M")
-    safe_print(f"\n[{timestamp}] Diya: {message}")
+    face = f" {_brain_avatar_label}" if _brain_avatar_label else ""
+    safe_print(f"\n[{timestamp}] Diya{face}: {message}")
+
+
+def _start_brain_avatar_window(memory):
+    """Start the brain avatar window when TTS/voice mode is active."""
+    global _brain_avatar_window
+
+    avatar_path = memory.get("identity", {}).get("avatar_path", "")
+    if not avatar_path:
+        return None
+
+    # Prefer GPU 3D avatar if available (runs as subprocess). Fall back to Tkinter.
+    try:
+        from avatar_client import Avatar3D
+
+        av = Avatar3D()
+        av.start()
+        if not getattr(av, "connected", False):
+            raise RuntimeError("3D avatar did not report a connected display")
+        _brain_avatar_window = av
+        _set_brain_avatar_controller(av)
+        atexit.register(av.stop)
+        return av
+    except Exception:
+        # Fall back to lightweight Tkinter avatar
+        window = BrainAvatarWindow(avatar_path).start()
+        _brain_avatar_window = window
+        _set_brain_avatar_controller(None)
+        atexit.register(window.stop)
+        return window
 
 
 # ================= VOICE MODE =================
@@ -264,6 +569,8 @@ def main():
 
     # Load memory
     memory = load_memory()
+    _set_brain_avatar_label(memory)
+    avatar_window = _start_brain_avatar_window(memory) if _tts_enabled else None
     current_state = get_current_state()
     props = get_state_properties(current_state)
     mode = memory.get("personality_mode", {}).get("current", "friend")
@@ -275,6 +582,8 @@ def main():
     safe_print("     DIYA - Autonomous AI Healthcare Companion")
     safe_print("     She lives, thinks, and speaks on her own.")
     safe_print("=" * 60)
+    if _brain_avatar_label:
+        safe_print(f"  Face: {_brain_avatar_label}")
     safe_print(f"  State: {current_state:<12} | Mood: {props['mood']}")
     safe_print(f"  Energy: {props['energy'] * 100:.0f}%{'':<10} | Mode: {mode_info['emoji']} {mode_info['name']}")
     safe_print(f"  TTS: {'ON' if _tts_enabled else 'OFF':<14} | STT: {'ON' if _voice_enabled else 'OFF'}")
@@ -316,11 +625,11 @@ def main():
     diya_print(greeting)
     if _tts_enabled:
         if _voice_enabled:
-            if not speak_blocking(greeting):
+            if not speak_with_avatar(greeting, speak_blocking, blocking=True):
                 safe_print("  [TTS warning] Startup greeting was not spoken.")
                 safe_print(f"  {get_tts_diagnostics()}")
         else:
-            if not speak(greeting):
+            if not speak_with_avatar(greeting, speak, blocking=False):
                 safe_print("  [TTS warning] Startup greeting was not spoken.")
                 safe_print(f"  {get_tts_diagnostics()}")
 
@@ -332,6 +641,8 @@ def main():
         if not _tts_enabled:
             _tts_enabled = True
         run_voice_chat_session(auto_loop)
+        if avatar_window:
+            avatar_window.stop()
         return
 
     if autonomous_mode:
@@ -343,10 +654,12 @@ def main():
             farewell = "I will pause autonomous mode now."
             diya_print(farewell)
             if _tts_enabled:
-                if not speak(farewell):
+                if not speak_with_avatar(farewell, speak, blocking=False):
                     safe_print("  [TTS warning] Autonomous farewell was not spoken.")
                     safe_print(f"  {get_tts_diagnostics()}")
             auto_loop.stop()
+            if avatar_window:
+                avatar_window.stop()
             return
 
     # -------- MAIN INPUT LOOP --------
@@ -367,18 +680,22 @@ def main():
             diya_print(farewell)
             if _tts_enabled:
                 if _voice_enabled:
-                    if not speak_blocking(farewell):
+                    if not speak_with_avatar(farewell, speak_blocking, blocking=True):
                         safe_print("  [TTS warning] Exit farewell was not spoken.")
                         safe_print(f"  {get_tts_diagnostics()}")
                 else:
-                    if not speak(farewell):
+                    if not speak_with_avatar(farewell, speak, blocking=False):
                         safe_print("  [TTS warning] Exit farewell was not spoken.")
                         safe_print(f"  {get_tts_diagnostics()}")
             auto_loop.stop()
+            if avatar_window:
+                avatar_window.stop()
             break
 
-        speak_fn = speak_blocking if _voice_enabled else speak
+        speak_fn = (lambda msg: speak_with_avatar(msg, speak_blocking, blocking=True)) if _voice_enabled else (lambda msg: speak_with_avatar(msg, speak, blocking=False))
         if process_turn(user_input, auto_loop, speak_fn=speak_fn):
+            if avatar_window:
+                avatar_window.stop()
             break
 
 
