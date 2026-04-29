@@ -95,11 +95,6 @@ flowchart TD
 
 ---
 
-### 🔄 Autonomous Learning Engine
-
-<p align="center">
-  <img src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" width="500"/>
-</p>
 
 * Learns every 15–30 mins
 * Parallel topic exploration
