@@ -21,13 +21,14 @@ I’ll design this like a **top-tier GitHub project page**: badges, visuals, str
 
 ---
 
-## 🎬 Demo Preview  
+## 🎬 Demo Preview
 
 <p align="center">
   <a href="https://drive.google.com/file/d/1iTJzU7fk2ev9BQ3HzMKvrsvWaA-G73uM/view?usp=drive_link">
-    <img src="https://img.youtube.com/vi/VIDEO_ID/0.jpg" width="600"/>
+    ▶️ Watch Demo Video
   </a>
 </p>
+
 
 > ⚡ *Not a chatbot. A cognitive system that thinks, learns, and evolves.*
 
